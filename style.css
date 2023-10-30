@@ -1,0 +1,22 @@
+root{
+    --text-color: black;
+}
+.carousel-inner{
+    border-radius: 10px;
+}
+#carouselExample img{
+    height: 460px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#caterogies img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#caterogies a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
