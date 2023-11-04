@@ -12,14 +12,14 @@
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
     <!-- owlcarousel -->
-    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
-    <script src="assets/vendors/jquery.min.js"></script>
-    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.js"></script>
 </head>
 
 <body>
-    <main id="main" class="vh-100">
+    <main id="main">
         <div class="container">
             <div class="slider">
                 <div id="carouselExampleControlsNoTouching" class="carousel slide my-3" data-bs-touch="false">
@@ -56,7 +56,7 @@
             <!-- San pham ban chay -->
             <div class="products mostSale_products">
                 <h3 class="text-uppercase product-title ms-2 text">Sản phẩm bán chạy</h3>
-                <div class="product-wrapper p-2 border">
+                <div class="product-wrapper p-2">
                     <div class="row row-cols-1 row-cols-md-5 g-1">
                         <div class="col">
                             <a href="#" class="product-link">
@@ -190,7 +190,7 @@
             <!-- San pham khuyen mai -->
             <div class="products discount-product mt-3">
                 <h3 class="text-uppercase product-title ms-2 text">Khuyến mãi sập sàn</h3>
-                <div class="product-wrapper p-2 border">
+                <div class="product-wrapper p-2">
                     <div class="row row-cols-1 row-cols-md-5 g-1">
                         <div class="col">
                             <a href="#" class="product-link">
@@ -372,62 +372,99 @@
             </div>
             <!-- end sp khuyen mai -->
             <!-- category -->
-            <div class="categories">
-                <div class="row">
-                    <div class="large-12 columns">
+            <div class="category">
+                <div class="row categories_container my-3">
+                    <div class="large-12 columns ">
                         <div class="owl-carousel owl-theme">
                             <div class="item">
-                                <h4>1</h4>
+                                <a href="#" class="catogory_link">
+                                    <img class="img-fluid category_img mb-2" src="./images/cate_fresh.png" alt="">
+                                    <h4 class="text-uppercase"><span class="category_title">Thực phẩm tươi sống</span>
+                                    </h4>
+                                </a>
                             </div>
                             <div class="item">
-                                <h4>2</h4>
+                                <a href="#" class="catogory_link">
+                                    <img src="./images/cate_nuts.png" alt="" class="img-fluid category_img mb-2">
+                                    <h4 class="text-uppercase"><span class="category_title">Các loại hạt</span></h4>
+                                </a>
                             </div>
                             <div class="item">
-                                <h4>3</h4>
+                                <a href="#" class="catogory_link">
+                                    <img src="./images/cate_canned.png" alt="" class="img-fluid category_img mb-2">
+                                    <h4 class="text-uppercase"><span class="category_title">Đồ đóng hộp</span></h4>
+                                </a>
                             </div>
                             <div class="item">
-                                <h4>4</h4>
+                                <a href="#" class="catogory_link">
+                                    <img src="./images/cate_medical.png" alt="" class="img-fluid category_img mb-2">
+                                    <h4 class="text-uppercase"><span class="category_title">Dụng cụ y tế</span></h4>
+                                </a>
                             </div>
                             <div class="item">
-                                <h4>5</h4>
+                                <a href="#" class="catogory_link">
+                                    <img src="./images/cate_xabong.png" alt="" class="img-fluid category_img mb-2">
+                                    <h4 class="text-uppercase"><span class="category_title">Xà phòng, nước giặt</span>
+                                    </h4>
+                                </a>
                             </div>
                             <div class="item">
-                                <h4>6</h4>
-                            </div>
-                            <div class="item">
-                                <h4>7</h4>
-                            </div>
-                            <div class="item">
-                                <h4>8</h4>
-                            </div>
-                            <div class="item">
-                                <h4>9</h4>
-                            </div>
-                            <div class="item">
-                                <h4>10</h4>
-                            </div>
-                            <div class="item">
-                                <h4>11</h4>
-                            </div>
-                            <div class="item">
-                                <h4>12</h4>
+                                <a href="#" class="catogory_link viewall">
+                                    <img src="./images/next.png" alt="" class="img-fluid category_img">
+                                    <h4 class="text-uppercase"><span class="category_title">Xem tất cả</span></h4>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- end category -->
+            <!-- guide -->
+            <div class="intro mb-4 border-top border-bottom">
+                <div class="intro_content_container p-3">
+                    <h2 class="text-uppercase intro_title">nhu yếu phẩm nhóm 10</h2>
+                    <p class="intro_content">
+                        Là một cửa hàng chuyên bán các mặt hàng nhu
+                        yếu phẩm cho mọi gia đình. Quý khách có thể tìm thấy những sản phẩm tốt nhất từ thực
+                        phẩm, đồ uống, đồ vệ sinh cá nhân và các sản phẩm y tế gia đình. Nhu yếu phẩm
+                        nhóm 10 cam kết mang đến cho khách hàng những sản phẩm <span>chất lượng, giá cả hợp lý,
+                            dịch
+                            vụ
+                            tận
+                            tâm và uy tín</span></p>
+                </div>
+            </div>
+            <!-- end guide -->
+            <!-- guarantee -->
+            <div class="guarantee pb-4">
+                <div class="row">
+                    <div class="col-4"><i class="fa-solid fa-truck"></i>
+                        <span class="mt-2">Giao hàng nhanh chóng</span>
+                    </div>
+                    <div class="col-4"><i class="fa-solid fa-user-shield"></i>
+                        <span class="mt-2">Bảo vệ quyền lợi khách hàng</span>
+                    </div>
+                    <div class="col-4"><i class="fa-solid fa-phone"></i>
+                        <span class="mt-2">Đặt hàng tiện lợi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- script -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- vendors -->
+    <script src="../assets/vendors/highlight.js"></script>
+    <script src="../assets/js/app.js"></script>
     <!-- carousel -->
     <script>
         $(document).ready(function () {
             var owl = $('.owl-carousel');
             owl.owlCarousel({
-                margin: 10,
+                loop: false,
                 nav: false,
-                loop: true,
+                margin: 10,
                 responsive: {
                     0: {
                         items: 1
@@ -435,11 +472,22 @@
                     600: {
                         items: 3
                     },
-                    1000: {
+                    960: {
                         items: 5
+                    },
+                    1200: {
+                        items: 6
                     }
                 }
-            })
+            });
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY > 0) {
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
         })
     </script>
 </body>
