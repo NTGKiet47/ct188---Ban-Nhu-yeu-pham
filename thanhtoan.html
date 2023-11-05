@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toan</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+</head>
+
+<body>
+    <main id="main">
+        <div class="container">
+            <div class=" payment-wrapper text-center">
+                <h1>Thanh toán</h1>
+            </div>
+            <form action="" class="payment">
+                <div class="form-content_wrapper">
+                    <div class="address_container white-container">
+                        <table class="address">
+                            <tr>
+                                <h3 class="title">Địa chỉ nhận hàng</h3>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="ipt_hoTen">Họ tên người nhận
+                                        <span style="color:red">*</span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="text" id="ipt_hoTen" placeholder="Vui lòng nhập họ tên" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="ipt_sdt">Số điện thoại
+                                        <span style="color:red">*</span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="text" id="ipt_sdt" placeholder="Nhập số điện thoại" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="ipt_address">Địa chỉ giao hàng
+                                        <span style="color:red">*</span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="text" id="ipt_address" placeholder="Nhập địa chỉ" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delivery-time_containe white-container">
+                        <h3 class="title">Chọn thời gian giao hàng</h3>
+                        <table class="delivery-time">
+                            <tr>
+                                <td><strong>Sáng</strong></td>
+                                <td>
+                                    <div class="time_wrapper">
+                                        <span>08:00 - 10:00</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="time_wrapper">
+                                        <span>10:00 - 12:00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Trưa</strong></td>
+                                <td>
+                                    <div class="time_wrapper">
+                                        <span>12:00 - 14:00</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="time_wrapper">
+                                        <span>14:00 - 16:00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Chiều</strong></td>
+                                <td>
+                                    <div class="time_wrapper">
+                                        <span>16:00 - 18:00</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="time_wrapper">
+                                        <span>18:00 - 20:00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pay-method_container white-container">
+                        <div class="pay-thod_wrapper">
+                            <input type="radio" class="pay-method" id="cash" name="pay-method">
+                            <label class="pay-content" for="cash">Tiền mặt (COD)</label>
+                        </div>
+                        <div class="pay-thod_wrapper">
+                            <input type="radio" class="pay-method" id="online" name="pay-method">
+                            <label class="pay-content" for="online">Thanh toán trực tuyến (Online)</label>
+                        </div>
+                    </div>
+                    <div class="note_container white-container">
+                        <h5>Ghi chú (Nếu có)</h5>
+                        <textarea name="" id="note" cols="90" rows="2"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

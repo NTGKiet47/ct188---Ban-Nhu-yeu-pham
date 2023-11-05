@@ -1,8 +1,9 @@
 :root {
     --background-color: #f5f5f5;
     --shadow-color: #E3E3E3;
-    --primary-color: #ED1C24;
     --border-color: #d0d0d0;
+    --primary-color: #176f9e;
+    --secondary-color: #ebe897;
 }
 
 html {
@@ -17,6 +18,7 @@ a {
 #main {
     background-color: var(--background-color);
     /* background-color: var(--background-color); */
+    height: 100%;
 }
 
 .container {
@@ -25,18 +27,12 @@ a {
 }
 
 .slider .carousel-item {
-    height: 460px;
+    /* height: 460px; */
 }
 
 .carousel-item img {
-    height: 100%;
+    height: 320px;
     object-fit: cover;
-}
-
-.carousel-inner,
-.carousel-item {
-    /* Bo goc hinh dau trang */
-    /* border-radius: 4px; */
 }
 
 /* San pham */
@@ -45,13 +41,18 @@ a {
     border-bottom: 1px solid var(--border-color);
 }
 
+.product-title {
+    color: var(--primary-color);
+}
+
 .products .card {
     box-shadow: 0px 0px 2px var(--primary-color);
     position: relative;
 }
 
-.product-title {
-    color: var(--primary-color);
+.products .card:hover {
+    box-shadow: 0px 0px 3px var(--secondary-color);
+    transition: ease-out 0.5s;
 }
 
 .product-wrapper img {
@@ -114,8 +115,6 @@ a {
 }
 
 /* guarantee */
-.guarantee {}
-
 .guarantee .col-4 {
     display: flex;
     flex-direction: column;
@@ -130,4 +129,29 @@ a {
 
 .guarantee span {
     font-size: 1.5rem;
+}
+
+/* end trang chu */
+/* trang thanh toan */
+/* title */
+.back-icon {
+    display: inline;
+}
+
+.white-container {
+    background-color: var(--primary-color);
+    margin: 8px 0;
+    color: white;
+    padding-left: 8px;
+}
+
+.form-content_wrapper table {
+    line-height: 30px;
+}
+
+.address input {
+    height: 26px;
+    border-radius: 4px;
+    border: none;
+    outline: 1px solid var(--border-color);
 }
