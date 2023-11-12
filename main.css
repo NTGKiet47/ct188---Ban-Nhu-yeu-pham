@@ -42,7 +42,8 @@ a {
 }
 
 .product-title {
-    color: var(--primary-color);
+    color: white;
+    padding-top: 8px;
 }
 
 .products .card {
@@ -61,6 +62,10 @@ a {
     padding-top: 5px;
 }
 
+.products {
+    background-color: var(--primary-color);
+}
+
 /* San pham ban chay */
 .more-link_wrapper {
     display: flex;
@@ -68,7 +73,7 @@ a {
 }
 
 .product-wrapper {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
 }
 
 /* San pham khuyen mai */
@@ -133,25 +138,70 @@ a {
 
 /* end trang chu */
 /* trang thanh toan */
-/* title */
-.back-icon {
-    display: inline;
+/* info */
+.payment-container {
+    width: 500px;
 }
 
-.white-container {
-    background-color: var(--primary-color);
-    margin: 8px 0;
-    color: white;
-    padding-left: 8px;
+.payment-block {
+    font-size: 1.5rem;
 }
 
-.form-content_wrapper table {
+.payment-block table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 16px;
     line-height: 30px;
 }
 
-.address input {
-    height: 26px;
+.customer-info_wrapper>table td:first-child {
+    width: 30%;
+}
+
+.customer-info_wrapper input {
+    width: 100%;
     border-radius: 4px;
-    border: none;
-    outline: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
+}
+
+/* time */
+.dev-time_wrapper td {
+    width: 30%;
+    text-align: center;
+}
+
+.dev-time-option {
+    border: 1px solid;
+}
+
+.dev-time-option:focus {
+    background-color: var(--primary-color);
+    transition: ease 0.3s;
+}
+
+/* pay method */
+.pay-method {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.note_wrapper textarea {
+    width: 100%;
+    resize: none;
+}
+
+.pay-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.pay-buttons a,
+button {
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 4px;
 }
