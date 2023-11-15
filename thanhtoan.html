@@ -16,50 +16,53 @@
 <body>
     <main id="main">
         <div class="container payment-container">
-            <div class="title_container py-5">
+            <div class="title_container py-3">
                 <h1 class="text-center text-uppercase">Thanh toán</h1>
             </div>
             <form action="" class="payment_form" method="POST" enctype="application/x-www-form-urlencoded">
-                <div class="payment-block border p-5 customer-info_wrapper">
+                <div class="payment-block p-3 customer-info_wrapper">
                     <h3>Nhập thông tin thanh toán</h3>
                     <table>
                         <tr>
                             <td>
                                 <label for="ipt_name">Họ và tên</label>
                             </td>
-                            <td><input type="text" id="ipt_name" placeholder="Nhập đầy đủ họ và tên"></td>
+                            <td><input type="text" id="ipt_name" placeholder="Nhập đầy đủ họ và tên" required></td>
                         </tr>
                         <tr>
                             <td>
                                 <label for="ipt_sdt">Số điện thoại</label>
                             </td>
-                            <td><input type="text" id="ipt_sdt"></td>
+                            <td><input type="text" id="ipt_sdt" placeholder="Nhập số điện thoại" required></td>
                         </tr>
                         <tr>
                             <td>
                                 <label for="ipt_address">Địa chỉ</label>
                             </td>
-                            <td><input type="text" id="ipt_address" placeholder="Nhập địa chỉ hiện tại"></td>
+                            <td><input type="text" id="ipt_address" placeholder="Nhập địa chỉ hiện tại" required></td>
                         </tr>
                     </table>
                 </div>
-                <div class="payment-block border p-5 dev-time_wrapper">
+                <div class="payment-block p-3 dev-time_wrapper">
                     <h3>Chọn thời gian giao hàng</h3>
                     <table>
-                        <tr>
+                        <tr id="dev-time">
                             <td>
-                                <button type="button" class="dev-time-option">Buổi sáng</button>
+                                <input type="radio" name="dev-time_option" id="morning"> <label for="morning">Buổi
+                                    sáng</label></input>
                             </td>
                             <td>
-                                <button type="button" class="dev-time-option">Buổi trưa</button>
+                                <input type="radio" name="dev-time_option" id="afternoon"> <label for="afternoon">Buổi
+                                    trưa</label></input>
                             </td>
                             <td>
-                                <button type="button" class="dev-time-option">Buổi chiều</button>
+                                <input type="radio" name="dev-time_option" id="evening"> <label for="evening">Buổi
+                                    chiều</label></input>
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class="payment-block border p-5 pay-method_wrapper">
+                <div class="payment-block p-3 pay-method_wrapper">
                     <h3>Chọn hình thức thanh toán</h3>
                     <div class="pay-method">
                         <input type="radio" class="pay-method-option mx-3" id="pay-online" name="pay-method-option">
@@ -72,10 +75,10 @@
                     </div>
                     <div class="note_wrapper mt-5 px-4">
                         <h3>Ghi chú (nếu có)</h3>
-                        <textarea name="note" id="note" cols="50" rows="2"></textarea>
+                        <textarea name="note" id="note" cols="50" rows="4"></textarea>
                     </div>
                 </div>
-                <div class="payment-block border p-5 pay-buttons">
+                <div class="payment-block p-3 pay-buttons">
                     <a href="#" class="back_to_GioHang mx-5">Trở về giỏ hàng</a>
                     <button type="submit" class="mx-5">Thanh toán</button>
                 </div>
