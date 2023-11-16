@@ -69,10 +69,33 @@ a {
     background-color: var(--primary-color);
 }
 
+.card-body {
+    height: 70px;
+}
+
+.card-price {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 /* San pham ban chay */
 .more-link_wrapper {
     display: flex;
     justify-content: center;
+}
+
+.more-link {
+    font-size: 1.5rem;
+    padding: 0 4px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.more-link:hover {
+    background-color: var(--primary-color);
+    transition: ease 0.3s;
 }
 
 .product-wrapper {
