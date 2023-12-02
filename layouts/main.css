@@ -248,3 +248,25 @@ button {
 a.back_to_GioHang {
     background-color: white;
 }
+
+/* searchList */
+#searchBox {
+    position: relative;
+}
+
+#searchBox:focus+#searchList {
+    opacity: 1;
+}
+
+#searchList {
+    position: absolute;
+    width: calc(100% - 28px);
+    height: 30px;
+    background-color: red;
+    z-index: 10;
+    top: 100%;
+    left: 2px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all linear 0.25s;
+}

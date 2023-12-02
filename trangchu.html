@@ -57,11 +57,15 @@
                         <div class="row mt-4">
                             <div class="col-12">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..."
-                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <input type="text" id="searchBox" class="form-control"
+                                        placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username"
+                                        aria-describedby="button-addon2">
+                                    <div id="searchList">
+                                    </div>
                                     <div class="input-group-append">
                                         <button class="btn btn-dark s1 find-button-bg" type="button"><i
-                                                class="fa fa-search" aria-hidden="true"></i></button>
+                                                class="fa fa-search" aria-hidden="true"
+                                                onclick="searchProduct()"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -307,7 +311,7 @@
                         </div>
                     </div>
                     <div class="more-link_wrapper">
-                        <a href="#" class="my-2 more-link">Xem tất cả</a>
+                        <a href="trangchu/spBanChay.html" class="my-2 more-link">Xem tất cả</a>
                     </div>
                 </div>
             </div>
@@ -471,7 +475,7 @@
                         </div>
                     </div>
                     <div class="more-link_wrapper">
-                        <a href="#" class="my-2 more-link">Xem tất cả</a>
+                        <a href="trangchu/spKhuyenMai.html" class="my-2 more-link">Xem tất cả</a>
                     </div>
                 </div>
             </div>
@@ -741,6 +745,7 @@
 
     <!-- script -->
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/script.js"></script>
     <!-- vendors -->
     <script src="assets/vendor/highlight.js"></script>
     <script src="assets/vendor/js/app.js"></script>
