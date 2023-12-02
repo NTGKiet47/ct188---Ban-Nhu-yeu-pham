@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chu</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="/layouts/main.css">
     <link rel="stylesheet" href="./layouts/header.css">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/vendor/owlcarousel/assets/owl.theme.default.min.css">
 
-    <script src="assets/vendor/jquery.min.js"></script>
+    <script src="assets/vendor/owlcarousel/jquery.min.js"></script>
     <script src="assets/vendor/owlcarousel/owl.carousel.js"></script>
 
 </head>
@@ -56,23 +56,23 @@
                         <!-- search -->
                         <div class="row mt-4">
                             <div class="col-12">
-                                <div class="input-group">
+                                <div id="searchWrapper" class="input-group">
                                     <input type="text" id="searchBox" class="form-control"
                                         placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username"
-                                        aria-describedby="button-addon2">
+                                        aria-describedby="button-addon2" onkeyup="filterFunction()">
+                                    <button id="clearSearch"><i class="fa-solid fa-x"></i></button>
                                     <div id="searchList">
                                     </div>
                                     <div class="input-group-append">
-                                        <button class="btn btn-dark s1 find-button-bg" type="button"><i
-                                                class="fa fa-search" aria-hidden="true"
-                                                onclick="searchProduct()"></i></button>
+                                        <button id="searchButton" class="btn btn-dark s1 find-button-bg"
+                                            type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- menu -->
-                        <div class="row mt-1">
+                        <div class=" row mt-1">
                             <div class="col-12">
                                 <ul class="menulv1 m-0 p-0">
                                     <li><a href="index.html">TRANG CHỦ</a></li>
@@ -744,11 +744,11 @@
     </footer>
 
     <!-- script -->
-    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/script.js"></script>
+    <script src="assets/vendor/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor//js/script.js"></script>
     <!-- vendors -->
-    <script src="assets/vendor/highlight.js"></script>
-    <script src="assets/vendor/js/app.js"></script>
+    <script src="assets/vendor/owlcarousel/highlight.js"></script>
+    <script src="assets/vendor/bootstrap_js/app.js"></script>
     <!-- carousel -->
     <script>
         $(document).ready(function () {
