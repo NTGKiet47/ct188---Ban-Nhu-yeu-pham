@@ -1,24 +1,43 @@
 let productList = [
-  {
-    prod_name: "ba roi bo",
-    price: "120",
-  },
-  {
-    prod_name: "phi le ca hoi",
-    price: "69",
-  },
-  {
-    prod_name: "trung ga",
-    price: "10",
-  },
-  {
-    prod_name: "gia vi muoi",
-    price: "5.6",
-  },
-  {
-    prod_name: "khan uot puri",
-    price: "46",
-  },
+  "Bột giặt",
+  "Ba gọi bò",
+  "Bàn chảy",
+  "Bắp cải tím",
+  "Bàn là",
+  "Chuối",
+  "Cá hồi đông lạnh",
+  "Các loại hạt",
+  "Cà rốt",
+  "Củ cải",
+  "Củ sắn",
+  "Dụng cụ y tế",
+  "Dụng cụ vệ sinh",
+  "Đồ đóng hộp",
+  "Đường cát",
+  "Đường mía",
+  "Gia vị muối kimchi",
+  "Gia vị ướp xá xíu",
+  "Khắn ướt PURI",
+  "Khắn ướt UNIKU",
+  "Kem đánh răng",
+  "Mì hảo hảo",
+  "Mì gấu đỏ",
+  "Mì tương đen",
+  "Nước xà phòng",
+  "Nước súc miệng Listerine",
+  "Nước tẩy rửa",
+  "Sữa chua",
+  "Sữa bắp",
+  "Sữa chuối",
+  "Sữa cô gái hà lan",
+  "Phở bò",
+  "Phở gà",
+  "Phi lê cá hồi",
+  "Trứng gà",
+  "Trứng vịt",
+  "Thịt heo",
+  "Thịt bò",
+  "Táo",
 ];
 
 // search dropdown
@@ -32,10 +51,10 @@ function filterFunction() {
     return;
   }
   for (let i = 0; i < productList.length; i++) {
-    let txtValue = productList[i].prod_name;
+    let txtValue = productList[i];
     if (txtValue.toLowerCase().indexOf(inputValue) > -1) {
       let span = document.createElement("span");
-      span.innerText = productList[i].prod_name;
+      span.innerText = productList[i];
       span.style.display = "block";
       span.onclick = function (event) {
         document.getElementById("searchBox").value = span.innerText;
@@ -69,8 +88,8 @@ document.getElementById("clearSearch").addEventListener("click", () => {
 
 // tim kiem
 document
-  .getElementById("searchButton")
-  .addEventListener("click", function (event) {
+  .getElementById("search_form")
+  .addEventListener("submit", function (event) {
     event.preventDefault();
     var searchValue = document.getElementById("searchBox").value.toLowerCase();
     var cards = document.querySelectorAll("[searchAble]");

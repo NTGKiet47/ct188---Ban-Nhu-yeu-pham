@@ -66,18 +66,20 @@
                         <!-- search -->
                         <div class="row mt-4">
                             <div class="col-12">
-                                <div id="searchWrapper" class="input-group">
-                                    <input type="text" id="searchBox" class="form-control"
-                                        placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username"
-                                        aria-describedby="button-addon2" onkeyup="filterFunction()">
-                                    <button id="clearSearch"><i class="fa-solid fa-x"></i></button>
-                                    <div id="searchList">
+                                <form action="" id="search_form">
+                                    <div id="searchWrapper" class="input-group">
+                                        <input type="text" id="searchBox" class="form-control"
+                                            placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username"
+                                            aria-describedby="button-addon2" onkeyup="filterFunction()">
+                                        <button id="clearSearch"><i class="fa-solid fa-x"></i></button>
+                                        <div id="searchList">
+                                        </div>
+                                        <div class="input-group-append">
+                                            <button id="searchButton" class="btn btn-dark s1 find-button-bg"
+                                                type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                        </div>
                                     </div>
-                                    <div class="input-group-append">
-                                        <button id="searchButton" class="btn btn-dark s1 find-button-bg"
-                                            type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
 
@@ -201,126 +203,103 @@
                 <h3 class="text-uppercase product-title ms-2 text">Sản phẩm bán chạy</h3>
                 <div class="product-wrapper p-2">
                     <div class="row row-cols-3 row-cols-md-5 g-1">
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card">
-                                    <img src="assets/img/products/thucpham/thitbaroi.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Ba rọi bò</h5>
-                                        <span class="card-price">120.000đ</span>
-                                    </div>
+                                <img src="assets/img/products/thucpham/thitbaroi.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ba rọi bò</h5>
+                                    <span class="card-price">120.000đ</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card">
-                                    <img src="assets/img/products/thucpham/cá phi lê.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Phi lê cá hồi 200g</h5>
-                                        <span class="card-price">69.000₫</span>
-                                    </div>
+                                <img src="assets/img/products/thucpham/cá phi lê.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Phi lê cá hồi 200g</h5>
+                                    <span class="card-price">69.000₫</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/thucpham/trungga.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Trứng gà - 10 trứng</h5>
-                                        <span class="card-price">35.000₫</span>
-                                    </div>
+                                <img src="assets/img/products/thucpham/trungga.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Trứng gà - 10 trứng</h5>
+                                    <span class="card-price">35.000₫</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/giavi/muoi_kim_chi.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Gia vị muối kimchi - 60g</h5>
-                                        <span class="card-price">5.600₫</span>
-                                    </div>
+                                <img src="assets/img/products/giavi/muoi_kim_chi.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gia vị muối kimchi - 60g</h5>
+                                    <span class="card-price">5.600₫</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="./assets/img/products/giavi/xaxiu.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Gia vị ướp xá xíu - 10g</h5>
-                                        <span class="card-price">4.300₫</span>
-                                    </div>
+                                <img src="./assets/img/products/giavi/xaxiu.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gia vị ướp xá xíu - 10g</h5>
+                                    <span class="card-price">4.300₫</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="./assets/img/products/giay_sinh_hoat/khanuotpuri.webp"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Khăn ướt PURI</h5>
-                                        <span class="card-price">46.000đ</span>
-                                    </div>
+                                <img src="./assets/img/products/giay_sinh_hoat/khanuotpuri.webp" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Khăn ướt PURI</h5>
+                                    <span class="card-price">46.000đ</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/vesinhcanhan/nuocucmieng.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Nước xúc miệng Listerine</h5>
-                                        <span class="card-price">119.000₫</span>
-                                    </div>
+                                <img src="assets/img/products/vesinhcanhan/nuocucmieng.webp" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nước xúc miệng Listerine</h5>
+                                    <span class="card-price">119.000₫</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/giay_sinh_hoat/khanuowtyuniku_nhadam.webp"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Khăn giấy ướt UNIKU</h5>
-                                        <span class="card-price">48.000₫</span>
-                                    </div>
+                                <img src="assets/img/products/giay_sinh_hoat/khanuowtyuniku_nhadam.webp"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Khăn giấy ướt UNIKU</h5>
+                                    <span class="card-price">48.000₫</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/giavi/xotgachin_su.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">10 gói gia vị ướp gà chinsu</h5>
-                                        <span class="card-price">38.000₫</span>
-                                    </div>
+                                <img src="assets/img/products/giavi/xotgachin_su.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">10 gói gia vị ướp gà chinsu</h5>
+                                    <span class="card-price">38.000₫</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/thucpham/taopinklady.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Táo NewZeland</h5>
-                                        <span class="card-price">63.000₫</span>
-                                    </div>
+                                <img src="assets/img/products/thucpham/taopinklady.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Táo NewZeland</h5>
+                                    <span class="card-price">63.000₫</span>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="more-link_wrapper">
+
                         <a href="trangchu/spBanChay.html" class="my-2 more-link">Xem tất cả</a>
                     </div>
                 </div>
@@ -331,160 +310,141 @@
                 <h3 class="text-uppercase product-title ms-2 text">Khuyến mãi sập sàn</h3>
                 <div class="product-wrapper p-2">
                     <div class="row row-cols-3 row-cols-md-5 g-1">
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/thucpham/ca_rot.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Cà rốt Đà Lạt - 1kg</h5>
-                                        <span class="card-price">39.000₫</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/thucpham/ca_rot.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cà rốt Đà Lạt - 1kg</h5>
+                                    <span class="card-price">39.000₫</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/giay_sinh_hoat/giayvesinh_anan.webp"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Khăn giấy An An - 12 cuộn</h5>
-                                        <span class="card-price">29.500₫</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/giay_sinh_hoat/giayvesinh_anan.webp" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Khăn giấy An An - 12 cuộn</h5>
+                                    <span class="card-price">29.500₫</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/giay_sinh_hoat/giayvesinh_lenchi.webp"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Khăn giấy Lency - 6 cuộn</h5>
-                                        <span class="card-price">21.400₫</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/giay_sinh_hoat/giayvesinh_lenchi.webp"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Khăn giấy Lency - 6 cuộn</h5>
+                                    <span class="card-price">21.400₫</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/vesinhcanhan/banchaycolgate.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Bàn chải colgate - 5 cái</h5>
-                                        <span class="card-price">118.500₫</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/vesinhcanhan/banchaycolgate.webp" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bàn chải colgate - 5 cái</h5>
+                                    <span class="card-price">118.500₫</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/vesinhcanhan/kemdanhrangcloseup.webp"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Kem đánh răng Closeup</h5>
-                                        <span class="card-price">72.500₫</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/vesinhcanhan/kemdanhrangcloseup.webp" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kem đánh răng Closeup</h5>
+                                    <span class="card-price">72.500₫</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/thucpham/ca_hoi_dong_lanh.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Cá hồi đông lạnh 300g</h5>
-                                        <span class="card-price">89.000₫</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/thucpham/ca_hoi_dong_lanh.webp" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cá hồi đông lạnh 300g</h5>
+                                    <span class="card-price">89.000₫</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/thucpham/mì hảo hảo.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Mì hảo hảo - 5 gói</h5>
-                                        <span class="card-price">19.800₫</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/thucpham/mì hảo hảo.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mì hảo hảo - 5 gói</h5>
+                                    <span class="card-price">19.800₫</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/thucpham/bapcaitim.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Bắp cải tím - 500g</h5>
-                                        <span class="card-price">47.900₫</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/thucpham/bapcaitim.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bắp cải tím - 500g</h5>
+                                    <span class="card-price">47.900₫</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
-                        <div class="col" searchAble>
+                        <div class="col card" searchAble>
                             <a href="#" class="product-link">
-                                <div class="card" searchAble>
-                                    <img src="assets/img/products/thucpham/sữa cô gái halan.webp" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Sữa cô gái Hà Lan - 1 lốc</h5>
-                                        <span class="card-price">22.500</span>
-                                    </div>
-                                    <div class="card-discount">
-                                        -
-                                        <b class="discount-amount">21</b>
-                                        %
-                                    </div>
+                                <img src="assets/img/products/thucpham/sữa cô gái halan.webp" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sữa cô gái Hà Lan - 1 lốc</h5>
+                                    <span class="card-price">22.500</span>
+                                </div>
+                                <div class="card-discount">
+                                    -
+                                    <b class="discount-amount">21</b>
+                                    %
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="more-link_wrapper">
+
                         <a href="trangchu/spKhuyenMai.html" class="my-2 more-link">Xem tất cả</a>
                     </div>
                 </div>
