@@ -67,13 +67,13 @@ document.getElementById("clearSearch").addEventListener("click", () => {
   searchBox.value = "";
 });
 
-// tim san pham
+// tim kiem
 document
   .getElementById("searchButton")
   .addEventListener("click", function (event) {
     event.preventDefault();
     var searchValue = document.getElementById("searchBox").value.toLowerCase();
-    var cards = document.getElementsByClassName("[product-link]");
+    var cards = document.querySelectorAll("[searchAble]");
     var cardsArray = Array.from(cards);
     var searchResults = [];
 
@@ -90,33 +90,3 @@ document
     sessionStorage.setItem("searchResults", JSON.stringify(searchResults));
     window.location.href = "ResultSearch.html";
   });
-
-// tra ve ket qua tim kiem
-document.addEventListener("DOMContentLoaded", function () {
-  var storedResults = sessionStorage.getItem("searchResults");
-  var searchResults = JSON.parse(storedResults);
-
-  var searchResultsContainer = document.getElementById(
-    "searchResultsContainer"
-  );
-  var classList = document.getElementById("classList");
-
-  if (searchResults && searchResults.length > 0) {
-    searchResults.forEach(function (result) {
-      var cardDiv = document.createElement("div");
-      cardDiv.innerHTML = result.html;
-
-      var cardElement = cardDiv.firstChild;
-      cardElement.classList.add(...result.classes.split(" "));
-      searchResultsContainer.appendChild(cardElement);
-    });
-  } else {
-    var noResultsMessage = document.createElement("p");
-    noResultsMessage.textContent = "Không tìm thấy sản phẩm.";
-    noResultsMessage.style.fontSize = "25px";
-    noResultsMessage.classList.add("text-center");
-    searchResultsContainer.appendChild(noResultsMessage);
-  }
-});
-
-// chua load duoc san pham o trang tim kiem

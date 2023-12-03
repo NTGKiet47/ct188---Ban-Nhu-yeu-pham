@@ -16,19 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css">
     <!-- css -->
-    <link rel="stylesheet" href="../layouts/main.css">
-    <link rel="stylesheet" href="../layouts/header.css">
-    <link rel="stylesheet" href="../layouts/footer.css">
+    <link rel="stylesheet" href="/layouts/main.css">
+    <link rel="stylesheet" href="/layouts/header.css">
+    <link rel="stylesheet" href="/layouts/footer.css">
     <!-- fontawesome icon -->
-    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
-    <!-- owlcarousel -->
-    <link rel="stylesheet" href="../assets/vendor/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/vendor/owlcarousel/assets/owl.theme.default.min.css">
-
-    <script src="../assets/vendor/jquery.min.js"></script>
-    <script src="../assets/vendor/owlcarousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.css">
 
 </head>
 
@@ -58,7 +52,7 @@
                     <!-- xl breakpoint -->
                     <!-- logo-->
                     <div class="xl-brandbar col-xl-3 flex-div text-center">
-                        <img src="../assets/img/logo/logo2.png" class="logo01 img-fluid">
+                        <img src="/assets/img/logo/logo2.png" class="logo01 img-fluid">
                     </div>
 
                     <!-- search & menu -->
@@ -66,12 +60,14 @@
                         <!-- search -->
                         <div class="row mt-4">
                             <div class="col-12">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..."
-                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <div id="searchWrapper" class="input-group">
+                                    <input type="text" id="searchBox" class="form-control"
+                                        placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username"
+                                        aria-describedby="button-addon2">
+                                    <button id="clearSearch"><i class="fa-solid fa-x"></i></button>
                                     <div class="input-group-append">
-                                        <button class="btn btn-dark s1 find-button-bg" type="button"><i
-                                                class="fa fa-search" aria-hidden="true"></i></button>
+                                        <button id="searchButton" class="btn btn-dark s1 find-button-bg"
+                                            type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +137,7 @@
 
                     <!-- smaller logo -->
                     <div class="xl-lower-brandbar col-sm-4 col-md-4 col-lg-4 flex-div">
-                        <img src="../assets/img/logo/logo1.png" class="logo01-xl-lower img-fluid">
+                        <img src="/assets/img/logo/logo1.png" class="logo01-xl-lower img-fluid">
                     </div>
 
                     <!-- smaller register & cart & menu-->
@@ -166,7 +162,7 @@
             <div id="resultSearchProducts">
                 <div class="container">
                     <h1 class="mb-5 mt-5 text-center">Kết quả tìm kiếm</h1>
-                    <div class="row" id="searchResultsContainer"></div>
+                    <div class="row row-cols-3 row-cols-md-5 g-1" id="searchResultsContainer"></div>
                 </div>
             </div>
             <!-- end sp khuyen mai -->
@@ -224,7 +220,7 @@
                 <!-- another tools -->
                 <div class="row footer1">
                     <div class="col-3 pt-2">
-                        <img src="../assets/img/logo/logo2.png" class="brandname">
+                        <img src="/assets/img/logo/logo2.png" class="brandname">
                     </div>
                     <div class="col-2 pt-3">
                         <p class="tittlefooter1 pt-1 pb-0 pl-0 pr-0 m-0">VỀ G10ESSENTIALS</p>
@@ -366,10 +362,10 @@
 
     <!-- script -->
     <!-- script -->
-    <script src="../assets/vendor/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/bootstrap_js/bootstrap.bundle.min.js"></script>
     <!-- vendors -->
-    <script src="../assets/vendor/highlight.js"></script>
-    <script src="../assets/vendor/js/app.js"></script>
+    <script src="/assets/vendor/owlcarousel/highlight.js"></script>
+    <script src="js/resultSearch.js"></script>
 </body>
 
 </html>
