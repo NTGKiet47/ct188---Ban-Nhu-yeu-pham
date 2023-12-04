@@ -6,9 +6,7 @@
     --secondary-color: #ebe897;
 }
 
-html {
-    font-size: 62.5%;
-}
+
 
 body {
     font-family: 'Merriweather', serif;
@@ -25,18 +23,9 @@ a {
 }
 
 
-
-.slider .carousel-item {
-    /* height: 460px; */
-}
-
 .carousel-item img {
     height: 320px;
     object-fit: cover;
-}
-
-.advertise {
-    /* height: 380px; */
 }
 
 /* San pham */
@@ -71,12 +60,16 @@ a {
 }
 
 .card-body {
-    height: 70px;
+    height: 120px;
+}
+
+.card-title {
+    font-size: 16px;
 }
 
 .card-price {
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -93,7 +86,7 @@ a {
     cursor: pointer;
     transform: translateX(-30%) translateY(100px);
     opacity: 0;
-    font-size: 1.4rem;
+    font-size: 14px;
 }
 
 .col.card:hover .orderButton {
@@ -110,7 +103,7 @@ a {
 }
 
 .more-link {
-    font-size: 1.5rem;
+    font-size: 16px;
     padding: 0 4px;
     border: 1px solid white;
     border-radius: 4px;
@@ -145,7 +138,7 @@ a {
 /* category */
 .categories_container h4 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 14px;
 }
 
 .category_img {
@@ -160,7 +153,7 @@ a {
 }
 
 .intro_content {
-    font-size: 1.7rem;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -178,7 +171,7 @@ a {
 }
 
 .guarantee i {
-    font-size: 6rem;
+    font-size: 4rem;
     color: var(--primary-color);
 }
 
@@ -196,7 +189,7 @@ a {
 }
 
 .payment-block {
-    font-size: 1.5rem;
+    font-size: 16px;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -278,9 +271,10 @@ a.back_to_GioHang {
     position: absolute;
     border: none;
     background-color: transparent;
-    right: 35px;
+    right: 50px;
+    top: 6px;
     color: var(--border-color);
-    z-index: 1;
+    z-index: 10;
 }
 
 #clearSearch:hover {
@@ -307,7 +301,7 @@ a.back_to_GioHang {
     background-color: white;
     padding-left: 10px;
     padding-top: 4px;
-    font-size: 1.3rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;

@@ -67,14 +67,20 @@
                         <!-- search -->
                         <div class="row mt-4">
                             <div class="col-12">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..."
-                                        aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-dark s1 find-button-bg" type="button"><i
-                                                class="fa fa-search" aria-hidden="true"></i></button>
+                                <form action="" id="search_form">
+                                    <div class="input-group">
+                                        <input id="searchBox" type="text" class="form-control"
+                                            placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username"
+                                            aria-describedby="button-addon2" onkeyup="filterFunction()">
+                                        <button id="clearSearch"><i class="fa-solid fa-x"></i></button>
+                                        <div id="searchList">
+                                        </div>
+                                        <div class="input-group-append">
+                                            <button id="searchButton" class="btn btn-dark s1 find-button-bg"
+                                                type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
 
@@ -230,7 +236,7 @@
                             <a href="#" class="product-link">
                                 <img src="assets/img/products/giavi/muoi_kim_chi.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Gia vị muối kimchi - 60g</h5>
+                                    <h5 class="card-title">Gia vị muối kimchi</h5>
                                     <span class="card-price">5.600₫</span>
                                 </div>
                             </a>
@@ -259,7 +265,7 @@
                                 <img src="assets/img/products/vesinhcanhan/nuocucmieng.webp" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Nước xúc miệng Listerine</h5>
+                                    <h5 class="card-title">Nước xúc miệng</h5>
                                     <span class="card-price">119.000₫</span>
                                 </div>
                             </a>
@@ -278,7 +284,7 @@
                             <a href="#" class="product-link">
                                 <img src="assets/img/products/giavi/xotgachin_su.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">10 gói gia vị ướp gà chinsu</h5>
+                                    <h5 class="card-title">Gia vị ướp gà chinsu</h5>
                                     <span class="card-price">38.000₫</span>
                                 </div>
                             </a>
