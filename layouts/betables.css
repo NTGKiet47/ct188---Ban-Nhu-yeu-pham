@@ -1,0 +1,11 @@
+.flex-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-btn-btable{
+    width: 80px !important;
+}
+.table-pro-imgs{
+    width: 120px !important;
+}

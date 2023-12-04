@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu</title>
+    <link rel="shortcut icon" href="images/logo-chinh.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="header.css" type="text/css" rel="stylesheet" />
+    <link href="footer.css" type="text/css" rel="stylesheet" />
+    <link href="general.css" type="text/css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--bootrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font-family: 'Nunito', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- font-family: 'Merriweather', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!--nhóm-->
+    <script src="https://kit.fontawesome.com/04491c6a94.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #175f7e;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- ibar & logo-menu-select-cart -->
+        <div class="ibar-background">
+            <div class="container custom-container">
+                <!-- email-hotline -->
+                <div class="row ibar">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 left-ibar-zone pl-5">
+                        NHẬP MÃ "G10ESS" NHẬN QUÀ HẤP DẪN!
+                    </div>
+                    <div class="col-xl-6 right-ibar-zone pr-5">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Email:
+                        g10essentials@student.ctu.edu.vn&nbsp;&nbsp;
+                        <i class="fa fa-phone" aria-hidden="true"></i> Hotline: 0910.101.010
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-2-background">
+            <div class="container custom-container pt-1 pb-1">
+                <!-- brandbar -->
+                <div class="row lmsc">
+                    <!-- xl breakpoint -->
+                    <!-- logo-->
+                    <div class="xl-brandbar col-xl-3 flex-div text-center">
+                        <img src="images/logo2.png" class="logo01 img-fluid">
+                    </div>
+
+                    <!-- search & menu -->
+                    <div class="xl-brandbar col-xl-6">
+                        <!-- search -->
+                        <div class="search-input">
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <form class="search-box" action="farm.html" method="get" id="search-box"
+                                        onsubmit="return mySearch(event);">
+                                        <div class="input-group">
+                                            <input id="myInput" name="myInput" type="search" class="form-control"
+                                                autocomplete="off" placeholder="Tìm kiếm sản phẩm..."
+                                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <div class="search-icon">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-dark s1 find-button-bg" type="submit"><i
+                                                            class="fa fa-search" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="autocom-box">
+                                        <li>Bột giặt</li>
+                                        <li>Bột giặt</li>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- menu -->
+                        <div class="row mt-1">
+                            <div class="col-12">
+                                <ul class="menulv1 m-0 p-0">
+                                    <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                                    <li><a href="#">SẢN PHẨM <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="menulv2">
+                                            <li><a href="#">Thực phẩm tươi</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                            <li><a href="#">Lương thực</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                            <li><a href="#">Công nghệ phẩm</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">TIN TỨC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="menulv2">
+                                            <li><a href="#">Góc dinh dưỡng</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                            <li><a href="#">Góc khỏe đẹp</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">HỖ TRỢ KHÁCH HÀNG</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- register & cart -->
+                    <div class="xl-brandbar col-xl-3 text-center flex-div">
+                        <a href="dang-nhap.html" class="unul-a">
+                            <div class="cartuser1 cartuser1-1 flex-div">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="unul-a">
+                            <div class="cartuser1 cartuser1-2 flex-div">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!-- xl lower breakpoint -->
+
+
+                    <!-- smaller search -->
+                    <div class="xl-lower-brandbar col-sm-4 col-md-4 col-lg-4 flex-div">
+                        <a href="#" class="xlsmaller-butheader flex-div m-1"><i class="fa fa-bars"
+                                aria-hidden="true"></i></a>
+                        <a href="#" class="xlsmaller-butheader flex-div m-1"><i class="fa fa-search"
+                                aria-hidden="true"></i></a>
+                    </div>
+
+                    <!-- smaller logo -->
+                    <div class="xl-lower-brandbar col-sm-4 col-md-4 col-lg-4 flex-div">
+                        <img src="images/logo1.png" class="logo01-xl-lower img-fluid">
+                    </div>
+
+                    <!-- smaller register & cart & menu-->
+                    <div class="xl-lower-brandbar col-sm-4 col-md-4 col-lg-4 flex-div">
+                        <a href="#" class="xlsmaller-butheader flex-div m-1"><i class="fa fa-user"
+                                aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="xlsmaller-butheader flex-div m-1"><i class="fa fa-shopping-cart"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <span class="border border-light">
+            <article>
+                <div class="container mt-3">
+                    <h1>GIỚI THIỆU VỀ CÔNG TY CHÚNG TÔI</h1>&nbsp;
+                    <section class="product">
+                        <ul>
+                            <li>G10ESSENTIALS thành lập từ tháng 12 năm 2007. Thương hiệu chúng tôi luôn hướng đến những
+                                thực phẩm an toàn
+                                với mục tiêu mang đến cho Quý khách hàng những trải nghiệm
+                                về chất lượng nhất. Trải qua những nỗ lực và đổi mới không ngừng, đến nay
+                                G10ESSENTIALS đã tạo dựng được một hệ thống quy mô với đa dạng các loại thực phẩm, đồ
+                                dùng, trái cây,…</li> &nbsp;
+                            <li>Hiện nay G10ESSENTIALS đã có mặt trên toàn quốc. Điều này, giúp cho nhân viên công ty và
+                                khách hàng cảm thấy thoải mái,
+                                thuận tiện hơn trong quá trình cung ứng sản phẩm, giao hàng và mua hàng nhanh chóng..
+                            </li>&nbsp;
+                            <li>Bên cạnh việc chủ động nguồn hàng, hệ thống G10ESSENTIALS cam kết thực hiện chủ trương
+                                bình ổn giá với các mặt hàng thực phẩm,
+                                nhu yếu phẩm, giá niêm yết, công khai, không để xảy ra tình trạng tăng giá, đội giá
+                                trong hệ thống.</li>&nbsp;
+                            <li>Không chỉ đảm bảo số lượng, chất lượng hàng hóa cũng được G10ESSENTIALS kiểm soát chặt
+                                chẽ.
+                                Hàng hóa nhu yếu phẩm, thực phẩm tại G10ESSENTIALS đều cam kết có nguồn gốc rõ ràng,
+                                bảo đảm an toàn vệ sinh thực phẩm, tuân thủ các điều kiện nghiêm ngặt về chất lượng,
+                                tạo môi trường mua sắm tốt nhất đến với các quý khách hàng.</li>&nbsp;
+                            <li>Chính sách giao hàng cực nhanh.</li>&nbsp;
+                            <li>Hỗ trợ khách hàng 24/7.</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="container mt-3">
+                    <h1>DANH SÁCH CÁC LOẠI NHU YẾU PHẨM</h1>&nbsp;
+                    <ol>
+                        <b>
+                            <li class="abc">Thực phẩm tươi sống.</li>
+                        </b>&nbsp;
+                        <section class="product">
+                            <ul>
+                                <li>Thương hiệu chúng tôi luôn cung cấp cho khách hàng những sản phẩm an toàn vệ sinh,
+                                    chất lượng nhất, đảm bảo cho sức khỏe khách hàng.
+                                    Với các sản phẩm như: thịt gà, vịt, heo, các loại rau cũ quả sạch, thủy hải sản,
+                                    trái cây, trứng,.... Thịt động vật là nguồn cung cấp chất đạm chủ yếu.
+                                    Chất đạm của thịt có đầy đủ các amino acid cần thiết và ở tỷ lệ cân đối. Thịt được
+                                    chia thành thịt đỏ và thịt trắng.
+                                    Nên ăn cân bằng thịt đỏ và thịt trắng. Chúng sẽ hỗ trợ nhau để tăng sức khỏe cho con
+                                    người.</li>&nbsp;
+                                <li>Thủy sản và hải sản gồm cá, tôm các loại, hải sản và các sản phẩm từ cá, thủy hải
+                                    sản,...
+                                    Trong đó, cá có hàm lượng chất đạm cao, chất lượng tốt và các amino acid cân đối.
+                                    Chất đạm trong cá dễ hấp thu hơn thịt, thịt của cá chỉ chứa một lượng nhỏ chất béo
+                                    không bão hòa,
+                                    vì vậy tốt cho sức khỏe, đặc biệt là tốt hệ tiêu hóa và tim mạch.</li>&nbsp;
+                            </ul>
+                            <div class="center"><img src="images/ca-va-thit.jpg" alt="ảnh" title="ảnh cá và thịt"
+                                    width="70%" height="450"></div>&nbsp;
+                        </section>
+
+                        <b>
+                            <li class="abc">Thực phẩm rau củ, trái cây.</li>
+                        </b>&nbsp;
+                        <section class="product">
+                            <ul>
+                                <li>Bên thương hiệu chúng tôi các loại như trứng gà, trứng vịt, trứng chim cút,... là
+                                    các thực phẩm có nguồn gốc rõ ràng từ các trang trại. Tất cả các loại trứng gà, vịt,
+                                    trứng cua,
+                                    cá đều là nguồn cung cấp chất đạm tốt nhất vì có đầy đủ các amino acid cần thiết với
+                                    tỷ lệ cân đối. </li>&nbsp;
+                                <li>Rau củ quả đều là những sản phẩm tươi ngon, tốt cho sức khỏe. Giá trị của rau và hoa
+                                    quả là cung cấp cho cơ thể các chất dinh dưỡng có hoạt tính sinh học cao,
+                                    đặc biệt là vitamin C, chất khoáng và vi khoáng. Ngoài ra, còn là các axit hữu cơ,
+                                    xenluloza,
+                                    các chất chống oxy hóa nên có tác dụng nâng cao sức khỏe và phòng chống các bệnh mạn
+                                    tính không lây.</li>&nbsp;
+                            </ul>
+                            <div class="center"><img src="images/rau-cu-trung.jpg" alt="ảnh" title="rau củ và trứng"
+                                    width="70%" height="450"></div>&nbsp;
+                        </section>
+
+                        <b>
+                            <li class="abc">Lương thực.</li>
+                        </b>&nbsp;
+                        <section class="product">
+                            <ul>
+                                <li>Đới với chúng ta lương thực là thứ không thể thiếu trong cuộc sống hàng ngày của mỗi
+                                    chúng ta.
+                                    Vì thế bên chúng tôi luôn có những sản phẩm để phục vụ nhu cầu hằng ngày của khách
+                                    hàng như: gạo,
+                                    nếp, ngô, vừng, các loại đậu, củ sắn, củ khoai, bột và tinh bột,...</li>&nbsp;
+                                <li>Lương thực là thức ăn chứa hàm lượng lớn tinh bột,
+                                    nguồn cung cấp chính về năng lượng và chất bột carbohydrate trong khẩu phần thức ăn.
+                                    Ngoài ra, lương thực chứa nhiều dưỡng chất khác như: protein (chất đạm)
+                                    lipit (chất béo), calcium, phosphorus, sắt, các vitamin nhóm B (như B1, B2, …) và
+                                    các khoáng chất.</li>&nbsp;
+                            </ul>
+                            <div class="center"><img src="images/luong_thuc.jpg" alt="ảnh" title="ảnh lương Thực"
+                                    width="70%" height="450"></div>&nbsp;
+                        </section>
+
+                        <b>
+                            <li class="abc">Các sản phẩm vệ sinh.</li>
+                        </b>&nbsp;
+                        <section class="product">
+                            <ul>
+                                <li>Các sản phẩm cũng như là dụng cụ vệ sinh là những thứ khá quen thuộc và không thể
+                                    thiếu mà nhiều hộ gia đình
+                                    hiện nay luôn chuẩn bị sẵn để có thể dọn vệ sinh nhà cửa sạch sẽ mỗi ngày.
+                                    Những sản phẩm như: chổi quét nhà, cây lau nhà, nước rửa chén, bột giặc, thùng rác,
+                                    dung dịch vệ sinh nhà tắm,
+                                    nước lau tẩy nhà bếp, kem đánh răng, bàn chảy đánh răng, giấy vệ sinh....</li>&nbsp;
+                            </ul>
+                            <div class="center"><img src="images/ve-sinh.jpg" alt="anh" title="vệ sinh" width="70%"
+                                    height="450"></div>&nbsp;
+                        </section>
+
+                        <b>
+                            <li class="abc">Các loại đồ đóng hộp.</li>
+                        </b>&nbsp;
+                        <section class="product">
+                            <ul>
+                                <li>Trên thị trường hiện nay còn có rất nhiều loại đồ hộp được làm từ thịt, cá, rau, củ,
+                                    hạt,...
+                                    Chúng tôi luôn cung cấp các sản phẩm đa dạng để phục vụ khách hàng.
+                                    Các loại đồ hợp này được sử dụng như nấu chín, diệt khuẩn, sấy khô, hút chân
+                                    không,...
+                                    để tiêu diệt vi khuẩn cũng như loại bỏ một số tính chất ban đầu.
+                                    Dễ dàng bảo quản và sử dụng, đảm bảo về nguồn góc sản xuất an toàn, không đọc hại
+                                    đến sức khỏe</li>&nbsp;
+                            </ul>
+                            <div class="center"><img src="images/do-dong-hop.jpg" alt="anh" title="đồ hợp" width="70%"
+                                    height="450"></div>&nbsp;
+                        </section>
+
+                        <b>
+                            <li class="abc">Dụng cụ y tế.</li>
+                        </b>&nbsp;
+                        <section class="product">
+                            <ul>
+                                <li>Chúng tôi có bán những vật dụng y tế như: dao, kéo, bông gòn, thuốc đỏ, oxy già,
+                                    băng keo cá nhân, băng gạc vết thương,... Đảm bảo về nguồn góc sản xuất an toàn,
+                                    không đọc hại,
+                                    ảnh hưởng đên sức khỏe người dùng.</li>&nbsp;
+                            </ul>
+                            <div class="center"><img src="images/vat-dung-y-te.jpg" alt="anh" title="y tế" width="70%"
+                                    height="450"></div>&nbsp;
+                        </section>
+
+                        <b>
+                            <li class="abc">Một số nhu yếu phẩm khác.</li>
+                        </b>&nbsp;
+                        <section class="product">
+                            <ul>
+                                <li>Ngoài ra bên chúng tôi còn rất nhiều những sản phẩm khác như:
+                                    nồi, chén, chảo,...Để phục vụ cho nhu cầu khách hàng ngày càng chu đáo hơn, bên
+                                    chúng tôi còn rất nhiều sản phẩm
+                                    khác đang chờ đợi mọi người. Mọi người có thể tìm kiếm những
+                                    sản phẩm dễ dàng hơn bên trang sảm phẩm và lựa chọn những sản phẩm phù hợp với nhu
+                                    cầu của mình.</li>
+                            </ul>
+                    </ol>
+                    <!-- <div class="center"><img src="images/khan-giay.jpg" alt="ảnh" title="khăn giấy" width="450" height="450"></div>-->
+                    </section>
+                </div>
+            </article>
+        </span>
+
+    </main>
+
+    <footer>
+        <!-- visible footer -->
+        <!-- visible footer1 -->
+        <div class="footer1-background">
+            <div class="container custom-container mt-2">
+                <!-- mregister -->
+                <div class="row footer1">
+                    <div class="col-12 text-center mt-2">
+                        <h1>Đăng kí nhận thông tin</h1>
+                        <h6>
+                            <b>Đăng kí Email để theo dõi những sản phẩm mới nhất và những thông tin khuyến mãi của chúng
+                                tôi</b>
+                        </h6>
+                    </div>
+                </div>
+                <div class="row footer1">
+                    <div class="col-12 text-center mt-0 flex-div">
+                        <div class="input-group client-if-email">
+                            <input type="text" class="form-control" placeholder="Nhập email của bạn"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-dark true-black-footer-btn" type="button" id="button-addon2"><i
+                                        class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer1">
+                    <div class="col-12 flex-div mt-0">
+                        <hr width="50%" class="hr1" />
+                    </div>
+                </div>
+
+                <!-- another tools -->
+                <div class="row footer1">
+                    <div class="col-3 pt-2">
+                        <img src="images/logo2.png" class="brandname">
+                    </div>
+                    <div class="col-2 pt-3">
+                        <p class="tittlefooter1 pt-1 pb-0 pl-0 pr-0 m-0">VỀ G10ESSENTIALS</p>
+                        <ul class="footerlist1 p-0 mt-1">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="lienHe_gioiThieu/gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="lienHe_gioiThieu/lienhe.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 pt-3">
+                        <p class="tittlefooter1 pt-1 pb-0 pl-0 pr-0 m-0">HỖ TRỢ MUA HÀNG</p>
+                        <ul class="footerlist1 p-0 mt-1">
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                            <li><a href="#">Tìm kiếm</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 text-left pt-3">
+                        <h4 class="m-0 p-0"><b>HOTLINE HỖ TRỢ</b></h4>
+                        <h5 class="m-0 p-0">0910.101.010</h5>
+                        <h4 class="m-0 p-0"><b>THEO DÕI CHÚNG TÔI</b></h4>
+                        <h5 class="m-0 p-0">
+                            <a href="#"><i class="fa fa-facebook-official footer-logo" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square footer-logo" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram footer-logo" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square footer-logo" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-spotify footer-logo" aria-hidden="true"></i></i></a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- visible footer2 -->
+        <div class="footer2-background flex-div">
+            <div class="container custom-container">
+                <div class="row footer2 text-center">
+                    <div class="col-12">
+                        © 2021-2023 Công ty TNHH G10ESSENTIALS. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- hidden footer -->
+        <!-- hidden footer 1 -->
+        <div class="hidden-footer-1">
+            <div class="container custom-container mt-2">
+                <!-- mregister -->
+                <div class="row footer1">
+                    <div class="col-12 text-center mt-2">
+                        <h1 class="hidden-footer-text-1">Đăng kí nhận tin</h1>
+                        <h6 class="hidden-footer-text-2">
+                            <b>Đăng kí Email để theo dõi những sản phẩm mới nhất và những thông tin khuyến mãi của chúng
+                                tôi</b>
+                        </h6>
+                        <p class="hidden-footer-text-3">
+                            Đăng kí Email để theo dõi những sản phẩm mới nhất và
+                            <br>
+                            không bỏ lỡ những thông tin khuyến mãi của chúng tôi
+                        </p>
+                    </div>
+                </div>
+                <div class="row footer1">
+                    <div class="col-12 text-center mt-0 flex-div">
+                        <div class="input-group client-if-email">
+                            <input type="text" class="form-control if-input-email" placeholder="Nhập email của bạn"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-dark true-black-footer-btn-1" type="button" id="button-addon2"><i
+                                        class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- hr -->
+                <div class="row footer1">
+                    <div class="col-12 flex-div mt-0">
+                        <hr width="50%" class="hr1" />
+                    </div>
+                </div>
+
+                <!-- about -->
+                <div class="row footer1">
+                    <div class="col-1"></div>
+                    <div class="col-5 footer-hidden-inf mt-4">
+                        <p class="tittlefooter1 pt-1 pb-0 pl-0 pr-0 m-0">VỀ G10ESSENTIALS</p>
+                        <ul class="footerlist1 p-0 mt-1">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="lienHe_gioiThieu/gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="lienHe_gioiThieu/lienhe.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 footer-hidden-inf mt-4">
+                        <p class="tittlefooter1 pt-1 pb-0 pl-0 pr-0 m-0">HỖ TRỢ MUA HÀNG</p>
+                        <ul class="footerlist1 p-0 mt-1">
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                            <li><a href="#">Tìm kiếm</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+
+                <!-- constant icon -->
+                <div class="row footer1 pb-3">
+                    <div class="col-12 flex-div">
+                        <h5 class="m-0 p-0">
+                            <a href="#"><i class="fa fa-facebook-official footer-logo" aria-hidden="true"></i></a>
+                            &nbsp;&nbsp;
+                            <a href="#"><i class="fa fa-twitter-square footer-logo" aria-hidden="true"></i></a>
+                            &nbsp;&nbsp;
+                            <a href="#"><i class="fa fa-instagram footer-logo" aria-hidden="true"></i></a>
+                            &nbsp;&nbsp;
+                            <a href="#"><i class="fa fa-twitter-square footer-logo" aria-hidden="true"></i></a>
+                            &nbsp;&nbsp;
+                            <a href="#"><i class="fa fa-spotify footer-logo" aria-hidden="true"></i></i></a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hidden footer 2 -->
+        <!-- footer2 -->
+        <div class="flex-div hidden-footer-2">
+            <div class="container custom-container">
+                <div class="row footer2 text-center">
+                    <div class="col-12">
+                        © Công ty TNHH 2021-2023 G10ESSENTIALS. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/suga.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

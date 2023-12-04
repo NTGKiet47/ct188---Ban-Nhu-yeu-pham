@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Ba rọi bò",
+    "price": 120000,
+    "image": "/assets/img/products/thucpham/thitbaroi.webp"
+  },
+  {
+    "id": 2,
+    "name": "Phi lê cá hồi 200g",
+    "price": 69000,
+    "image": "/assets/img/products/thucpham/cá phi lê.webp"
+  },
+  {
+    "id": 3,
+    "name": "Trứng gà-10 trứng",
+    "price": 35000,
+    "image": "/assets/img/products/thucpham/trungga.webp"
+  },
+  {
+    "id": 4,
+    "name": "Gia vị muối kim chi-60 gam",
+    "price": 5600,
+    "image": "/assets/img/products/giavi/muoi_kim_chi.webp"
+  },
+  {
+    "id": 5,
+    "name": "Gia vị ướp xá xíu-10gam",
+    "price": 4300,
+    "image": "/assets/img/products/giavi/xaxiu.webp"
+  },
+  {
+    "id": 6,
+    "name": "Khăn ướt PURI",
+    "price": 46000,
+    "image": "/assets/img/products/giay_sinh_hoat/khanuotpuri.webp"
+  }
+]
