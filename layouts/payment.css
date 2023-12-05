@@ -6,6 +6,10 @@
     --secondary-color: #ebe897;
 }
 
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
 .checkoutLayout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

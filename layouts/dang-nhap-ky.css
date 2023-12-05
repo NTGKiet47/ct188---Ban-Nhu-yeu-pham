@@ -1,80 +1,104 @@
-.hr1-dnk{
-    margin: 15px 0px 15px 0px;  
+.hr1-dnk {
+    margin: 15px 0px 15px 0px;
     padding: 0px;
     border-top: 3px solid black;
     opacity: 1;
 }
-.notemain{
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.notemain {
     font-family: 'Merriweather', serif;
     font-weight: bold;
     font-size: 20px;
 }
-.note1{
+
+.note1 {
     font-style: italic;
     font-size: 13px;
 }
-.hr1-dnk-xllower{
+
+.hr1-dnk-xllower {
     display: none;
 }
-.cont-dnk-bc{
+
+.cont-dnk-bc {
     background-color: #d9ebf1;
 }
-.extra-menu{
+
+.extra-menu {
     height: 40px;
 }
-.opacity-sub{
+
+.opacity-sub {
     opacity: 0.5 !important;
 }
-.extra-menu a{
+
+.extra-menu a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-@media (max-width: 1200px){
-    .hr1-dnk{
+
+@media (max-width: 1200px) {
+    .hr1-dnk {
         display: none;
     }
-    .hr1-dnk-xllower{
+
+    .hr1-dnk-xllower {
         display: block;
-        margin: 15px 0px 15px 0px;  
+        margin: 15px 0px 15px 0px;
         padding: 0px;
         border-top: 3px solid black;
         opacity: 1;
     }
-    .notemain{
+
+    .notemain {
         font-family: 'Merriweather', serif;
         font-weight: bold;
         font-size: 30px;
     }
-    .note1{
+
+    .note1 {
         font-style: italic;
         font-size: 20px;
     }
-    form{
+
+    form {
         font-size: 25px;
     }
-    form button{
+
+    form button {
         font-size: 25px !important;
     }
-    form select{
-        font-size: 25px !important;
-        border: 1px solid gray !important;
-    }
-    form select option{
-        font-size: 25px !important; 
-    }
-    form input{
+
+    form select {
         font-size: 25px !important;
         border: 1px solid gray !important;
     }
-    .extra-menu{
+
+    form select option {
+        font-size: 25px !important;
+    }
+
+    form input {
+        font-size: 25px !important;
+        border: 1px solid gray !important;
+    }
+
+    .extra-menu {
         height: 50px;
         font-size: 23px;
     }
-    .opacity-sub{
+
+    .opacity-sub {
         opacity: 0.5 !important;
     }
-    .extra-menu a{
+
+    .extra-menu a {
         text-decoration: none;
         color: black;
         font-weight: bold;

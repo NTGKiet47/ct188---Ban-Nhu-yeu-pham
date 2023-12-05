@@ -2,6 +2,10 @@ header .ibar-background {
     font-family: 'Merriweather', serif;
 }
 
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
 .flex-div {
     display: flex;
     justify-content: center;

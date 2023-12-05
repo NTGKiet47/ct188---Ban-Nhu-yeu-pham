@@ -11,6 +11,10 @@
     justify-content: space-between;
 }
 
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
 #cartRow h3 {
     width: 80%;
 }
