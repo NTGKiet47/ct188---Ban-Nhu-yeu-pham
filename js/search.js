@@ -107,5 +107,5 @@ document
       }
     });
     sessionStorage.setItem("searchResults", JSON.stringify(searchResults));
-    window.location.href = "ResultSearch.html";
+    window.location.href = "ketQuaTimKiem.html";
   });

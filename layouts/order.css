@@ -1,0 +1,144 @@
+:root {
+    --background-color: #f5f5f5;
+    --shadow-color: #E3E3E3;
+    --border-color: #d0d0d0;
+    --primary-color: #8ac1dd;
+    --secondary-color: #ebe897;
+}
+
+#cartRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cartRow h3 {
+    width: 80%;
+}
+
+/* cart icon */
+.iconCart {
+    position: relative;
+    width: 80px;
+}
+
+#cartImage {
+    width: 40px;
+    cursor: pointer;
+}
+
+.totalQuantity {
+    position: absolute;
+    top: -10%;
+    right: 40%;
+    font-size: x-large;
+    background-color: #b31010;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(20px);
+    font-size: 1.6rem;
+}
+
+
+
+.cart {
+    color: #fff;
+    position: fixed;
+    width: 420px;
+    max-width: 80vw;
+    height: 100vh;
+    background-color: #0E0F11;
+    top: 0px;
+    right: -100%;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    gap: 20px;
+    transition: right 1s;
+    z-index: 2;
+}
+
+.cart .buttons .checkout {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+.cart h2 {
+    color: var(--primary-color);
+    padding: 20px;
+    height: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.cart .listCart .item {
+    display: grid;
+    grid-template-columns: 50px 1fr 70px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+
+.cart .listCart img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart .listCart .item .name {
+    font-weight: bold;
+}
+
+.cart .listCart .item .quantity {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.cart .listCart .item .quantity span {
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+
+.cart .listCart {
+    padding: 20px;
+    overflow: auto;
+}
+
+.cart .listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+.cart .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.cart .buttons div {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart .buttons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* item */
+.item {
+    display: flex;
+}

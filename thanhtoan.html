@@ -18,9 +18,9 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
     <!-- css -->
-    <link rel="stylesheet" href="/layouts/main.css">
     <link rel="stylesheet" href="/layouts/header.css">
     <link rel="stylesheet" href="/layouts/footer.css">
+    <link rel="stylesheet" href="/layouts/payment.css">
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
 </head>
@@ -76,28 +76,9 @@
                                 <div class="col-12">
                                     <ul class="menulv1 m-0 p-0">
                                         <li><a href="trangchu.html">TRANG CHỦ</a></li>
-                                        <li><a href="#">SẢN PHẨM <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                            <ul class="menulv2">
-                                                <li><a href="#">Thực phẩm tươi</a>
-                                                    <hr class="hrmenu" />
-                                                </li>
-                                                <li><a href="#">Lương thực</a>
-                                                    <hr class="hrmenu" />
-                                                </li>
-                                                <li><a href="#">Công nghệ phẩm</a>
-                                                    <hr class="hrmenu" />
-                                                </li>
-                                            </ul>
+                                        <li><a href="tatCaSanPham.html">SẢN PHẨM </a>
                                         </li>
-                                        <li><a href="#">TIN TỨC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                            <ul class="menulv2">
-                                                <li><a href="#">Góc dinh dưỡng</a>
-                                                    <hr class="hrmenu" />
-                                                </li>
-                                                <li><a href="#">Góc khỏe đẹp</a>
-                                                    <hr class="hrmenu" />
-                                                </li>
-                                            </ul>
+                                        <li><a href="#">TIN TỨC</i></a>
                                         </li>
                                         <li>
                                             <a href="#">HỖ TRỢ KHÁCH HÀNG</a>
@@ -152,73 +133,69 @@
             </div>
         </header>
         <div class="container payment-container">
-            <div class="title_container py-3">
-                <h1 class="text-center text-uppercase">Thanh toán</h1>
+            <div class="checkoutLayout">
+
+
+                <div class="returnCart">
+                    <h1>Danh sách sản phẩm </h1>
+                    <div class="list row">
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="right">
+                    <h1>Thanh toán</h1>
+
+                    <div class="form">
+                        <div class="group">
+                            <label for="name">Họ Tên</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+
+                        <div class="group">
+                            <label for="address">Địa chỉ</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+
+                        <div class="group">
+                            <label for="country">Thành phố</label>
+                            <select name="country" id="country">
+                                <option value="">Choose..</option>
+                                <option value="">Cần Thơ</option>
+                            </select>
+                        </div>
+
+                        <div class="group">
+                            <label for="city">Quốc gia</label>
+                            <select name="city" id="city">
+                                <option value="">Choose..</option>
+                                <option value="">Việt Nam</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="return">
+                        <div class="row">
+                            <div class="col-6">
+                                <div>Số lượng</div>
+                                <div class="totalQuantity">70</div>
+                            </div>
+                            <div class="col-6">
+                                <div>Tổng tiền</div>
+                                <div class="totalPrice">900000đ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="buttonCheckout">Thanh toán</button>
+                </div>
             </div>
-            <form action="" class="payment_form" method="POST" enctype="application/x-www-form-urlencoded">
-                <div class="payment-block p-3 customer-info_wrapper">
-                    <h3>Nhập thông tin thanh toán</h3>
-                    <table>
-                        <tr>
-                            <td>
-                                <label for="ipt_name">Họ và tên</label>
-                            </td>
-                            <td><input type="text" id="ipt_name" placeholder="Nhập đầy đủ họ và tên" required></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="ipt_sdt">Số điện thoại</label>
-                            </td>
-                            <td><input type="text" id="ipt_sdt" placeholder="Nhập số điện thoại" required></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="ipt_address">Địa chỉ</label>
-                            </td>
-                            <td><input type="text" id="ipt_address" placeholder="Nhập địa chỉ hiện tại" required></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="payment-block p-3 dev-time_wrapper">
-                    <h3>Chọn thời gian giao hàng</h3>
-                    <table>
-                        <tr id="dev-time">
-                            <td>
-                                <input type="radio" name="dev-time_option" id="morning"> <label for="morning">Buổi
-                                    sáng</label></input>
-                            </td>
-                            <td>
-                                <input type="radio" name="dev-time_option" id="afternoon"> <label for="afternoon">Buổi
-                                    trưa</label></input>
-                            </td>
-                            <td>
-                                <input type="radio" name="dev-time_option" id="evening"> <label for="evening">Buổi
-                                    chiều</label></input>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="payment-block p-3 pay-method_wrapper">
-                    <h3>Chọn hình thức thanh toán</h3>
-                    <div class="pay-method">
-                        <input type="radio" class="pay-method-option mx-3" id="pay-online" name="pay-method-option">
-                        <label for="pay-online"><i class="fa-regular fa-credit-card"></i> Thanh toán trực tuyến</label>
-                    </div>
-                    <div class="pay-method mt-2">
-                        <input type="radio" class="pay-method-option mx-3" id="pay-cash" name="pay-method-option">
-                        <label for="pay-cash"><i class="fa-solid fa-hand-holding-dollar"></i> Tiền mặt (khi nhận
-                            hàng)</label>
-                    </div>
-                    <div class="note_wrapper mt-5 px-4">
-                        <h3>Ghi chú (nếu có)</h3>
-                        <textarea name="note" id="note" cols="50" rows="4"></textarea>
-                    </div>
-                </div>
-                <div class="payment-block p-3 pay-buttons">
-                    <a href="#" class="back_to_GioHang mx-5">Trở về giỏ hàng</a>
-                    <button type="submit" class="mx-5">Thanh toán</button>
-                </div>
-            </form>
         </div>
         <footer>
             <!-- visible footer -->
@@ -265,7 +242,7 @@
                             <ul class="footerlist1 p-0 mt-1">
                                 <li><a href="#">Trang chủ</a></li>
                                 <li><a href="#">Sản phẩm</a></li>
-                                <li><a href="lienHe_gioiThieu/lienhe.html">Liên hệ</a></li>
+                                <li><a href="lienhe.html">Liên hệ</a></li>
                             </ul>
                         </div>
                         <div class="col-3 pt-3">
@@ -353,7 +330,7 @@
                             <ul class="footerlist1 p-0 mt-1">
                                 <li><a href="#">Trang chủ</a></li>
                                 <li><a href="#">Sản phẩm</a></li>
-                                <li><a href="lienHe_gioiThieu/lienhe.html">Liên hệ</a></li>
+                                <li><a href="lienhe.html">Liên hệ</a></li>
                             </ul>
                         </div>
                         <div class="col-5 footer-hidden-inf mt-4">
@@ -401,7 +378,8 @@
     </main>
 
     <!-- script -->
-    <script src="/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="/js/payment.js"></script>
 
     <!-- header - footer -->
     <script src="https://kit.fontawesome.com/04491c6a94.js" crossorigin="anonymous"></script>

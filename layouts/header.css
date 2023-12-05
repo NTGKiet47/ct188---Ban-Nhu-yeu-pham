@@ -1,11 +1,13 @@
-header .ibar-background{
+header .ibar-background {
     font-family: 'Merriweather', serif;
 }
+
 .flex-div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .ibar {
     padding-top: 5px;
     background-color: black;
@@ -13,71 +15,80 @@ header .ibar-background{
     color: white;
     font-size: 90%;
 }
+
 .lmsc {
     background-color: #8ac1dd;
 }
+
 .logo01 {
     /* width: 60%;
     height: auto; */
     height: auto;
     width: 14rem;
 }
+
 .left-ibar-zone {
     text-align: left !important;
 }
+
 .right-ibar-zone {
     text-align: right !important;
 }
+
 .ibar-background {
     background-color: black;
 }
-.header-2-background{
+
+.header-2-background {
     background-color: #8ac1dd;
 }
-@media (max-width: 1200px)
-{
+
+@media (max-width: 1200px) {
     .left-ibar-zone {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100px;
 
-        color:white;
+        color: white;
         text-align: center;
         font-size: 26px;
     }
-    .right-ibar-zone{
+
+    .right-ibar-zone {
         display: none;
     }
 }
-.xl-lower-brandbar{
+
+.xl-lower-brandbar {
     display: none;
 }
-.find-button-bg
-{
+
+.find-button-bg {
     background-color: black !important;
 }
-@media (max-width: 1200px)
-{
-    .xl-brandbar{
+
+@media (max-width: 1200px) {
+    .xl-brandbar {
         display: none;
     }
-    .xl-lower-brandbar{
+
+    .xl-lower-brandbar {
         display: flex;
         height: 200px;
     }
-    .cartuser1-xl-lower
-    {
+
+    .cartuser1-xl-lower {
         width: 100px;
         height: 100px;
     }
-    .logo01-xl-lower
-    {
+
+    .logo01-xl-lower {
         height: auto;
         width: 180px;
     }
-    .find-zone-smaller
-    {
+
+    .find-zone-smaller {
         height: 70px !important;
     }
 }
@@ -89,31 +100,38 @@ header .ibar-background{
     margin-right: 15px;
     font-weight: 500;
 }
+
 .menulv1 li a {
     color: black;
     text-decoration: none;
 }
+
 .menulv1 li a:hover {
     text-decoration: underline;
 }
+
 .menulv1 li:hover ul {
     display: block;
     position: absolute;
     z-index: 1;
 }
+
 .menulv2 {
     display: none;
     padding-left: 0px;
     width: 200px;
     background-color: snow;
 }
+
 .menulv2 li {
     float: none;
 }
+
 .hrmenu {
     margin: 0px;
     padding: 0px;
 }
+
 /* End menu*/
 
 .cartuser1 {
@@ -125,13 +143,85 @@ header .ibar-background{
     font-size: 25px;
     color: black;
 }
-.cartuser1-1{
-    background-color: #d9ebf1;
-}
-.cartuser1-2{
+
+.cartuser1-1 {
     background-color: #d9ebf1;
 }
 
-.unul-a{
+.cartuser1-2 {
+    background-color: #d9ebf1;
+}
+
+.unul-a {
     text-decoration: none;
+}
+
+/* phần tìm kiếm*/
+.autocom-box {
+    background-color: white;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-input.active .autocom-box {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.autocom-box li {
+    list-style: none;
+    padding: 7px 10px;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+    display: none;
+}
+
+.autocom-box li:hover {
+    background: #efefef;
+}
+
+.search-input.active .autocom-box li {
+    display: block;
+
+}
+
+/* phần sau tim kiếm*/
+.image-container {
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.container h5 {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 100px;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #products {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+    }
 }

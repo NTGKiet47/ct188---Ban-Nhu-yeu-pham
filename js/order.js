@@ -19,7 +19,7 @@ close.addEventListener("click", function () {
 
 let products = null;
 // get data from file json
-fetch("../product.json")
+fetch("../js/product.json")
   .then((response) => response.json())
   .then((data) => {
     products = data;
@@ -42,7 +42,7 @@ function addDataToHTML() {
                             <a href="#" class="product-link">
                                 <img src="${product.image}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Cà rốt Đà Lạt - 1kg</h5>
+                                    <h5 class="card-title">${product.name}</h5>
                                     <span class="card-price">${product.price}₫</span>
                                 </div>
                                 <button class="orderButton" onclick="addCart(${product.id})">Thêm vào giỏ hàng</button>

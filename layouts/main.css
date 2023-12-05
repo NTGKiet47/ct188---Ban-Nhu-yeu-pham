@@ -93,7 +93,7 @@ a {
     /*Them vao gio hang*/
     transition: 0.5s;
     opacity: 1;
-    transform: translateX(-30%) translateY(85px);
+    transform: translateX(-30%) translateY(95px);
 }
 
 /* San pham ban chay */

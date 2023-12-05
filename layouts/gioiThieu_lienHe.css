@@ -1,0 +1,93 @@
+/*
+.two-cols {
+  column-count: 2;
+}
+.two-cols > h1 {
+  break-before: column;  
+}*/
+
+/*
+.center {  
+  padding: 20px;  
+  border: 0px solid #fff;  
+  text-align: center;
+  margin: auto;
+}
+*/
+
+div.center {
+  display: flex;
+  justify-content: center;
+}
+
+.hr1-copy {
+  margin: 15px 0px 15px 0px;
+  padding: 0px;
+  border-width: 3px;
+  border-top: 2px solid black;
+  opacity: 1;
+}
+
+.em-2 a {
+  color: red;
+  font-size: larger;
+  color: black;
+}
+
+.text-bg-light {
+  border-radius: 5px;
+  padding: 5px;
+  flex: 1;
+  flex-direction: column;
+
+}
+
+.bor {
+  border: 2px solid #175f7e;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.container {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/*chuoi*/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: 230px;
+  margin-bottom: 80px;
+}
+
+.sp {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 10px;
+  border: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  background-color: aliceblue;
+}
+
+h4 {
+  text-align: center;
+}
+
+.rm {
+  margin-top: 10px;
+
+}
+
+/*
+#cartDetail {
+  border: 1px ridge;
+}
+
+#cartDetail th {
+  text-align: center;
+}*/
