@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="/layouts/general.css">
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <!-- owlcarousel -->
     <link rel="stylesheet" href="assets/vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/vendor/owlcarousel/assets/owl.theme.default.min.css">
@@ -74,7 +77,7 @@
                                         <input id="searchBox" type="text" class="form-control"
                                             placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username"
                                             aria-describedby="button-addon2" onkeyup="filterFunction()">
-                                        <button id="clearSearch"><i class="fa-solid fa-x"></i></button>
+                                        <div id="clearSearch"><i class="fa-solid fa-x"></i></div>
                                         <div id="searchList">
                                         </div>
                                         <div class="input-group-append">
@@ -93,7 +96,15 @@
                                     <li><a href="trangchu.html">TRANG CHỦ</a></li>
                                     <li><a href="tatCaSanPham.html">SẢN PHẨM </a>
                                     </li>
-                                    <li><a href="#">TIN TỨC</i></a>
+                                    <li><a href="#">TIN TỨC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="menulv2">
+                                            <li><a href="#">Góc dinh dưỡng</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                            <li><a href="#">Góc khỏe đẹp</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#">HỖ TRỢ KHÁCH HÀNG</a>
@@ -148,7 +159,6 @@
         </div>
     </header>
     <main id="main">
-        <!-- end header -->
         <div class="container">
             <div class="slider row">
                 <div id="carouselExampleControlsNoTouching" class="carousel slide my-3" data-bs-touch="false">
@@ -490,12 +500,12 @@
             <!-- guide -->
             <div class="intro mb-4 border-top border-bottom">
                 <div class="intro_content_container p-3">
-                    <h2 class="text-uppercase intro_title">nhu yếu phẩm nhóm 10 - G10ESSENTIALS</h2>
+                    <h2 class="text-uppercase intro_title">nhu yếu phẩm nhóm 8 - G10ESSENTIALS</h2>
                     <p class="intro_content">
                         Là một cửa hàng chuyên bán các mặt hàng nhu
                         yếu phẩm cho mọi gia đình. Quý khách có thể tìm thấy những sản phẩm tốt nhất từ thực
                         phẩm, đồ uống, đồ vệ sinh cá nhân và các sản phẩm y tế gia đình. Nhu yếu phẩm
-                        nhóm 10 cam kết mang đến cho khách hàng những sản phẩm <span>chất lượng, giá cả hợp lý,
+                        nhóm 8 cam kết mang đến cho khách hàng những sản phẩm <span>chất lượng, giá cả hợp lý,
                             dịch
                             vụ
                             tận

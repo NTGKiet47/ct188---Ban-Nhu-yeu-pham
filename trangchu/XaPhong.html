@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html>/js/script.js
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xà Phòng - Nước Giặt</title>
+    <title>Xà phòng - nước giặt</title>
     <link rel="icon" href="../assets/img/logo/logo3.png">
     <!-- font chu -->
     <!-- font-family: 'Nunito', sans-serif; -->
@@ -22,15 +22,13 @@
     <link rel="stylesheet" href="../layouts/main.css">
     <link rel="stylesheet" href="../layouts/header.css">
     <link rel="stylesheet" href="../layouts/footer.css">
+    <link rel="stylesheet" href="../layouts/order.css">
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
-    <!-- owlcarousel -->
-    <link rel="stylesheet" href="../assets/vendor/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <script src="../assets/vendor/jquery.min.js"></script>
-    <script src="../assets/vendor/owlcarousel/owl.carousel.js"></script>
-
+    <script src="../assets/vendor/owlcarousel/jquery.min.js"></script>
     <link rel="stylesheet" href="../layouts/tim-kiem.css">
 </head>
 
@@ -83,19 +81,8 @@
                         <div class="row mt-1">
                             <div class="col-12">
                                 <ul class="menulv1 m-0 p-0">
-                                    <li><a href="trangchu.html">TRANG CHỦ</a></li>
-                                    <li><a href="#">SẢN PHẨM <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                        <ul class="menulv2">
-                                            <li><a href="#">Thực phẩm tươi</a>
-                                                <hr class="hrmenu" />
-                                            </li>
-                                            <li><a href="#">Lương thực</a>
-                                                <hr class="hrmenu" />
-                                            </li>
-                                            <li><a href="#">Công nghệ phẩm</a>
-                                                <hr class="hrmenu" />
-                                            </li>
-                                        </ul>
+                                    <li><a href="../trangchu.html">TRANG CHỦ</a></li>
+                                    <li><a href="../tatCaSanPham.html">SẢN PHẨM </a>
                                     </li>
                                     <li><a href="#">TIN TỨC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <ul class="menulv2">
@@ -122,7 +109,7 @@
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
                         </a>
-                        <a href="#" class="unul-a">
+                        <a href="../thanhtoan.html" class="unul-a">
                             <div class="cartuser1 cartuser1-2 flex-div">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </div>
@@ -160,152 +147,18 @@
         </div>
     </header>
     <main id="main">
-        <!-- end header -->
         <div class="container">
             <!-- San pham khuyen mai -->
             <div class="products discount-product mt-3">
-                <h3 class="text-uppercase product-title ms-2 text">Thực phẩm tươi sống</h3>
+                <div class="row" id="cartRow">
+                    <h3 class="text-uppercase product-title ms-2 text">Xà phòng - nước giặt</h3>
+                    <div class="iconCart">
+                        <img id="cartImage" src="../assets/img/cart.png">
+                        <div class="totalQuantity">0</div>
+                    </div>
+                </div>
                 <div class="product-wrapper p-2">
-                    <div class="row row-cols-3 row-cols-md-5 g-1">
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/thucpham/ca_rot.webp" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cà rốt Đà Lạt - 1kg</h5>
-                                    <span class="card-price">39.000₫</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/giay_sinh_hoat/giayvesinh_anan.webp"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Khăn giấy An An - 12 cuộn</h5>
-                                    <span class="card-price">29.500₫</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/giay_sinh_hoat/giayvesinh_lenchi.webp"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Khăn giấy Lency - 6 cuộn</h5>
-                                    <span class="card-price">21.400₫</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/vesinhcanhan/banchaycolgate.webp" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bàn chải colgate - 5 cái</h5>
-                                    <span class="card-price">118.500₫</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/vesinhcanhan/kemdanhrangcloseup.webp"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Kem đánh răng Closeup</h5>
-                                    <span class="card-price">72.500₫</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/thucpham/ca_hoi_dong_lanh.webp" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cá hồi đông lạnh 300g</h5>
-                                    <span class="card-price">89.000₫</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/thucpham/mì hảo hảo.webp" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mì hảo hảo - 5 gói</h5>
-                                    <span class="card-price">19.800₫</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/thucpham/bapcaitim.webp" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bắp cải tím - 500g</h5>
-                                    <span class="card-price">47.900₫</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col card" searchAble>
-                            <a href="#" class="product-link">
-                                <img src="../assets/img/products/thucpham/sữa cô gái halan.webp" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sữa cô gái Hà Lan - 1 lốc</h5>
-                                    <span class="card-price">22.500</span>
-                                </div>
-                                <div class="card-discount">
-                                    -
-                                    <b class="discount-amount">21</b>
-                                    %
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="more-link_wrapper">
-
-                        <a href="trangchu/spKhuyenMai.html" class="my-2 more-link">Xem tất cả</a>
-                    </div>
+                    <div class="row row-cols-3 row-cols-md-5 g-1 listProduct"></div>
                 </div>
             </div>
             <!-- end sp khuyen mai -->
@@ -321,6 +174,22 @@
                     <div class="col-4"><i class="fa-solid fa-phone"></i>
                         <span class="mt-2">Đặt hàng tiện lợi</span>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>
+                Giỏ hàng
+            </h2>
+            <div class="listCart">
+
+            </div>
+            <div class="buttons">
+                <div class="close">
+                    Đóng
+                </div>
+                <div class="checkout">
+                    <a href="../thanhtoan.html">Kiểm tra</a>
                 </div>
             </div>
         </div>
@@ -508,8 +377,10 @@
     <!-- script -->
     <!-- script -->
     <script src="../assets/vendor/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="../js/order.js"></script>
+
     <!-- vendors -->
-    <script src="../assets/vendor/highlight.js"></script>
+    <script src="../assets/vendor/owlcarousel/highlight.js"></script>
     <script src="../assets/vendor/bootstrap_js/app.js"></script>
 
 </body>

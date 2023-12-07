@@ -272,7 +272,7 @@ a.back_to_GioHang {
     border: none;
     background-color: transparent;
     right: 50px;
-    top: 6px;
+    top: 8px;
     color: var(--border-color);
     z-index: 10;
 }

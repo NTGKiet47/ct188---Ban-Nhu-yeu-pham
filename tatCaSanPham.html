@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="/layouts/general.css">
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <script src="assets/vendor/owlcarousel/jquery.min.js"></script>
 
@@ -70,7 +72,7 @@
                                         <input id="searchBox" type="text" class="form-control"
                                             placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username"
                                             aria-describedby="button-addon2" onkeyup="filterFunction()">
-                                        <button id="clearSearch"><i class="fa-solid fa-x"></i></button>
+                                        <div id="clearSearch"><i class="fa-solid fa-x"></i></div>
                                         <div id="searchList">
                                         </div>
                                         <div class="input-group-append">
@@ -89,7 +91,15 @@
                                     <li><a href="trangchu.html">TRANG CHỦ</a></li>
                                     <li><a href="tatCaSanPham.html">SẢN PHẨM </a>
                                     </li>
-                                    <li><a href="#">TIN TỨC</i></a>
+                                    <li><a href="#">TIN TỨC <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul class="menulv2">
+                                            <li><a href="#">Góc dinh dưỡng</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                            <li><a href="#">Góc khỏe đẹp</a>
+                                                <hr class="hrmenu" />
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#">HỖ TRỢ KHÁCH HÀNG</a>

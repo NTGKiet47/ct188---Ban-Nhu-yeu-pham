@@ -22,7 +22,7 @@
 	<link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
 	<link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
 	<!-- reus end -->
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- css -->
 	<link rel="stylesheet" href="../layouts/be.css" />
 
@@ -37,6 +37,59 @@
 	<link href="../assets/vendor/DataTables/jquery.dataTables.min.css" type="text/css" rel="stylesheet" />
 	<!-- ERR -->
 	<script src="../assets/vendor/jquery/jquery-3.7.0.min.js"></script>
+	<style>
+		body {
+			font-family: 'Nunito', sans-serif;
+		}
+
+		body {
+			display: grid;
+			grid-template-areas:
+				"header"
+				"main"
+				"footer"
+			;
+		}
+
+		#divchinh {
+			color: #176f9e;
+
+
+		}
+
+		table {
+			border-collapse: collapse;
+			border: 1;
+			width: 500px;
+			height: 600px;
+			border-color: #176f9e;
+		}
+
+		button:hover {
+			background-color: #176f9e;
+			color: antiquewhite;
+
+		}
+
+		input:hover {
+			background-color: #176f9e;
+			border-radius: 3px;
+			color: antiquewhite;
+		}
+
+		form {
+			margin: 0 auto;
+			margin-bottom: 10px;
+			background-color: #d9ebf1;
+			border-radius: 5px;
+			border: 2px solid #176f9e;
+			padding-left: 40px;
+			padding-top: 20px;
+			width: 500px;
+			align-items: center;
+			box-shadow: 1px 1px 2px black, 0 0 25px #176f9e, 0 0 5px #8ac1dd;
+		}
+	</style>
 </head>
 
 <body>
@@ -212,18 +265,7 @@
 						<i class="fe-menu"></i>
 					</button>
 				</li>
-				<li class="app-search d-none d-sm-block">
-					<form>
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search...">
-							<div class="input-group-append">
-								<button class="btn btn-primary" type="submit">
-									<i class="fe-search"></i>
-								</button>
-							</div>
-						</div>
-					</form>
-				</li>
+
 			</ul>
 		</div>
 		<!-- end Topbar -->
@@ -311,7 +353,7 @@
 						<li>
 							<a href="javascript: void(0);">
 								<i class="fe-folder-plus"></i>
-								<span> Thêm tài khoản</span>
+								<span> Thêm tài khoản </span>
 								<span class="menu-arrow"></span>
 							</a>
 							<ul class="nav-second-level nav" aria-expanded="false">
@@ -374,131 +416,65 @@
 											class="mdi mdi-filter-variant mr-1"></i> Filter</button>
 
 
-									<table id="orderstable" class="display" style="width: 100%">
-										<thead>
-											<tr>
-												<th class="text-center">ID</th>
-												<th class="text-center">Ảnh</th>
+									<div id="divchinh">
+										<h1
+											style="text-align: center;text-shadow: 1px 1px 2px black, 0 0 25px #176f9e, 0 0 5px #8ac1dd; margin-bottom: 10px;margin-top: 10px;">
+											Cập nhật Sản Phẩm</h1>
 
-												<th class="text-center">Tên sản phẩm</th>
-												<th class="text-center">Tình trạng</th>
-												<th class="text-center">Giá bán</th>
-												<th class="text-center">Thao tác</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>PROD001</td>
-												<td>
-													<img src="../assets/img/prod-imgs/nuoc-rua-chen.jpg"
-														class="table-pro-imgs" />
-												</td>
+										<form action="#">
 
-												<td>Nước rửa chén</td>
-												<td>Còn hàng</td>
-												<td>20.000đ/chai</td>
-												<td>
-													<button type="button" class="btn btn-info custom-btn-btable">
-														Chi tiết</button><br />
-													<a href="prod-edit.html"
-														class="btn btn-warning custom-btn-btable mt-1">
-														Sửa</a><br />
-													<button type="button"
-														class="btn-delprod btn btn-danger custom-btn-btable mt-1">
-														Xóa
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>PROD002</td>
-												<td>
-													<img src="../assets/img/prod-imgs/bot-giat.png"
-														class="table-pro-imgs" />
-												</td>
-
-												<td>Bột giặt</td>
-												<td>Còn hàng</td>
-												<td>220.000đ/túi</td>
-												<td>
-													<button type="button" class="btn btn-info custom-btn-btable">
-														Chi tiết</button><br />
-													<a href="prod-edit.html"
-														class="btn btn-warning custom-btn-btable mt-1">
-														Sửa</a><br />
-													<button type="button"
-														class="btn-delprod btn btn-danger custom-btn-btable mt-1">
-														Xóa
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>PROD003</td>
-												<td>
-													<img src="../assets/img/prod-imgs/gao-sua.jpg"
-														class="table-pro-imgs" />
-												</td>
-
-												<td>Gạo sữa nguyên chất</td>
-												<td>Còn hàng</td>
-												<td>100.000đ/túi</td>
-												<td>
-													<button type="button" class="btn btn-info custom-btn-btable">
-														Chi tiết</button><br />
-													<a href="prod-edit.html"
-														class="btn btn-warning custom-btn-btable mt-1">
-														Sửa</a><br />
-													<button type="button"
-														class="btn-delprod btn btn-danger custom-btn-btable mt-1">
-														Xóa
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>PROD004</td>
-												<td>
-													<img src="../assets/img/prod-imgs/nuoc-lau-san.png"
-														class="table-pro-imgs" />
-												</td>
-
-												<td>Nước lau sàn</td>
-												<td>Còn hàng</td>
-												<td>200.000đ/chai</td>
-												<td>
-													<button type="button" class="btn btn-info custom-btn-btable">
-														Chi tiết</button><br />
-													<a href="prod-edit.html"
-														class="btn btn-warning custom-btn-btable mt-1">
-														Sửa</a><br />
-													<button type="button"
-														class="btn-delprod btn btn-danger custom-btn-btable mt-1">
-														Xóa
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>PROD005</td>
-												<td>
-													<img src="../assets/img/prod-imgs/choi-dot-can-nhua.jpg"
-														class="table-pro-imgs" />
-												</td>
-
-												<td>Chổi đót cán nhựa</td>
-												<td>Còn hàng</td>
-												<td>20.000đ/cây</td>
-												<td>
-													<button type="button" class="btn btn-info custom-btn-btable">
-														Chi tiết</button><br />
-													<a href="prod-edit.html"
-														class="btn btn-warning custom-btn-btable mt-1">
-														Sửa</a><br />
-													<button type="button"
-														class="btn-delprod btn btn-danger custom-btn-btable mt-1">
-														Xóa
-													</button>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+											<table id="tabl">
+												<tr>
+													<td><strong><span>Nhập Tên Sản Phẩm : </span></strong></td>
+													<td><input type="text" id="tensp"><button
+															style="display: inline-block;margin-left: 10px;"
+															type="button" onclick="layten()"><i class="fa fa-search"
+																style="font-size:24px"></i></button></td>
+												</tr>
+												<tr>
+													<td><strong>Tên sản phẩm</strong></td>
+													<td><input type="text" id="id1" class="id"></td>
+												</tr>
+												<tr>
+													<td><strong>Loại sản phẩm</strong></td>
+													<td><input type="text" id="id2" class="id"></td>
+												</tr>
+												<tr>
+													<td><strong>Xuất sứ</strong></td>
+													<td><input type="text" id="id3" class="id"></td>
+												</tr>
+												<tr>
+													<td><strong>Thương hiệu</strong></td>
+													<td><input type="text" id="id4" class="id"></td>
+												</tr>
+												<tr>
+													<td><strong>Quy cách</strong></td>
+													<td><input type="text" id="id5" class="id"></td>
+												</tr>
+												<tr>
+													<td><strong>Giá</strong></td>
+													<td><input type="number" id="id6" class="id"></td>
+												</tr>
+												<tr>
+													<td><strong>Mô Tả</strong></td>
+													<td><textarea name="" id="id7" cols="20" rows="3" id="id1"
+															class="id"></textarea></td>
+												</tr>
+												<tr>
+													<td><strong>Thông Tin Chi Tiết</strong></td>
+													<td><textarea name="" id="id8" cols="20" rows="3" id="id1"
+															class="id"></textarea></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td> <button type="button" onclick="updateSp()">Cập nhật</button>
+														<button type="button" onclick="huy()"
+															style="margin-left: 5px;">Hủy</button>
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
 
 								</div> <!-- end card-body-->
 							</div> <!-- end card -->
@@ -697,54 +673,87 @@
 	<!-- bootstrap -->
 	<script src="../assets/vendor/js/bootstrap.bundle.min.js"></script>
 
-	<!-- data tables -->
-	<script src="../assets/vendor/DataTables/jquery.dataTables.min.js"></script>
-
-	<script src="../assets/vendor/sweetalert2/cdn.jsdelivr.net_npm_sweetalert2@11.7.27_dist_sweetalert2.all.min.js">
-	</script>
-
 	<script>
-		$(document).ready(function () {
+		var obj;
+		let myobj;
+		function updateSp() {
+			myobj.ten = document.getElementById("id1").value;
+			myobj.loai = document.getElementById("id2").value;
+			myobj.xuatxu = document.getElementById("id3").value;
+			myobj.Thuonghieu = document.getElementById("id4").value;
+			myobj.quicach = document.getElementById("id5").value;
+			myobj.gia = document.getElementById("id6").value;
+			localStorage.setItem("danhsachsanpham", JSON.stringify(obj));
+			alert("Cập nhật thành công");
+			location.reload();
+		}
 
-			$('.btn-delprod').click(function () {
-				Swal.fire({
-					title: "Bạn có muốn xóa sản phẩm này không?",
-					showDenyButton: true,
-					showCancelButton: false,
-					confirmButtonText: "Đồng ý",
-					denyButtonText: `Không`
-				}).then((result) => {
-					/* Read more about isConfirmed, isDenied below */
-					if (result.isConfirmed) {
-						Swal.fire("Xóa sản phẩm thành công!", "", "success");
-					} else if (result.isDenied) {
-						Swal.fire("Thay đổi không được lưu!", "", "info");
+		if (localStorage.getItem("lucnganvanhoa") == null) {
+			localStorage.setItem('lucnganvanhoa', "lich su");
+			var danhsachsp = [
+				{ ten: "Muối kim chi", loai: "Gia vị", xuatxu: "Việt Nam", Thuonghieu: "ChinSu", quicach: "Hộp", gia: 55.000, sandung: 1, },
+				{ ten: "Sốt gà", loai: "Gia vị", xuatxu: "Việt Nam", Thuonghieu: "ChinSu", quicach: "Gói 20g", gia: 55.000, sandung: 1, },
+				{ ten: "Xá xíu", loai: "Gia vị", xuatxu: "Việt Nam", Thuonghieu: "Phomai", quicach: "Gói 10g", gia: 55.000, sandung: 1, },
+				{ ten: "Giấy AN An", loai: "giấy vệ sinh", xuatxu: "Việt Nam", Thuonghieu: "AN AN", quicach: "Gói 100 miếng", gia: 55.000, sandung: 1, },
+				{ ten: "giấy Lency", loai: "giấy vệ sinh", xuatxu: "Việt Nam", Thuonghieu: "LENCY", quicach: "Gói 100 miếng", gia: 55.000, sandung: 1, },
+				{ ten: "Khăn đa năng", loai: "giấy vệ sinh", xuatxu: "Việt Nam", Thuonghieu: "Minus", quicach: "Gói 100 miếng", gia: 55.000, sandung: 1, },
+				{ ten: "Khăn Trà xanh", loai: "giấy vệ sinh", xuatxu: "Việt Nam", Thuonghieu: "Minus", quicach: "Gói 100 miếng", gia: 55.000, sandung: 1, },
+				{ ten: "Khăn đa năng", loai: "giấy vệ sinh", xuatxu: "Việt Nam", Thuonghieu: "Minus", quicach: "Gói 100 miếng", gia: 55.000, sandung: 1, },
+				{ ten: "Bột giặt OMO", loai: "sản phẩm vệ sinh", xuatxu: "Việt Nam", Thuonghieu: "OMO", quicach: "túi 500g", gia: 55.000, sandung: 1, },
+				{ ten: "Bột giặt Binki", loai: "sản phẩm vệ sinh", xuatxu: "Việt Nam", Thuonghieu: "Binki", quicach: "túi 500g", gia: 55.000, sandung: 1, },
+				{ ten: "Rửa chén sunlight", loai: "sản phẩm vệ sinh", xuatxu: "Việt Nam", Thuonghieu: "Minus", quicach: "túi 500g", gia: 55.000, sandung: 1, },
+				{ ten: "Bắp cải", loai: "Thực phẩm", xuatxu: "Việt Nam", Thuonghieu: "Viet Gap", quicach: "túi 1kg", gia: 55.000, sandung: 1, },
+				{ ten: "Cá hồi", loai: "Thực phẩm", xuatxu: "Việt Nam", Thuonghieu: "Viet Gap", quicach: "túi 1kg", gia: 55.000, sandung: 1, },
+				{ ten: "Cà rốt", loai: "Thực phẩm", xuatxu: "Việt Nam", Thuonghieu: "Viet Gap", quicach: "túi 1kg", gia: 55.000, sandung: 1, },
+				{ ten: "Táo", loai: "Thực phẩm", xuatxu: "Việt Nam", Thuonghieu: "Viet Gap", quicach: "túi 1kg", gia: 55.000, sandung: 1, },
+				{ ten: "Trứng", loai: "Thực phẩm", xuatxu: "Việt Nam", Thuonghieu: "Viet Gap", quicach: "Vỉ 20 trứng", gia: 55.000, sandung: 1, },
+				{ ten: "Thịt ba rọi", loai: "Thực phẩm", xuatxu: "Việt Nam", Thuonghieu: "Viet Gap", quicach: "túi 1kg", gia: 55.000, sandung: 1, },
+				{ ten: "Bàn chảy", loai: "vệ sinh cá nhân", xuatxu: "Việt Nam", Thuonghieu: "PS", quicach: "túyp 30g", gia: 55.000, sandung: 1, },
+				{ ten: "Kem đánh răng", loai: "vệ sinh cá nhân", xuatxu: "Việt Nam", Thuonghieu: "Closeup", quicach: "hộp 5 cái", sandung: 1, },
+				{ ten: "Nước súc miệng", loai: "vệ sinh cá nhân", xuatxu: "Việt Nam", Thuonghieu: "Clusterin", quicach: "lọ 200ml", sandung: 1, },
+			];
+			//đẩy lên localstorage
+			localStorage.setItem("danhsachsanpham", JSON.stringify(danhsachsp));
+			// kết thúc phần up lên localstorage
+		}
+
+		function huy() {
+			location.reload();
+		}
+		function layten() {
+
+			//phần danh sách sản phẩm và up lên localstorage
+			obj = JSON.parse(localStorage.getItem("danhsachsanpham"));
+			let tensp = document.getElementById('tensp').value
+			myobj = null;
+			obj.filter(v => {
+				if (v.ten.toUpperCase() === (tensp.toUpperCase())) {
+					myobj = v;
+					if (myobj.sandung == 1) {
+						document.getElementById("id1").value = myobj.ten;
+						document.getElementById("id2").value = myobj.loai;
+						document.getElementById("id3").value = myobj.xuatxu;
+						document.getElementById("id4").value = myobj.Thuonghieu;
+						document.getElementById("id5").value = myobj.quicach;
+						document.getElementById("id6").value = myobj.gia;
+						document.getElementById("id7").value = "Thông tin chưa được cập nhật";
+						document.getElementById("id8").value = "Thông tin chưa được cập nhật";
+					} else {
+						alert("Sản phẩm này đã không còn kinh doanh");
+						location.reload();
 					}
-				});
-			});
+				}
+			})
+			if (myobj == null) {
+				alert("Không tìm thấy sản phẩm")
+				location.reload();
+			}
 
-			//datatables
-			$("#orderstable").DataTable({
-				data: this.products,
-				scrollX: 100, // Nội dụng của table sẽ hiện thị với with 400px, Nếu quá thì sẽ có thanh scroll
-				scrollY: 500, // Nội dụng của table sẽ hiện thị với with 400px, Nếu quá thì sẽ có thanh scroll
-				language: {
-					processing: "Dữ liệu đang được tải lên...",
-					lengthMenu: "Hiển thị: _MENU_",
-					search: "Tìm kiếm",
-					info: "Hiển thị _START_ đến _END_ trên tổng _TOTAL_ mục",
-					infoEmpty: "Hiển thị 0 đến 0 trên tổng _TOTAL_ mục",
-					zeroRecords: "Không tìm thấy bản ghi phù hợp",
-					emptyTable: "Không có dữ liệu",
-					paginate: {
-						first: "Trang đầu",
-						previous: "Trang trước",
-						next: "Trang sau",
-						last: "Trang cuối",
-					},
-				},
-			});
-		});
+
+			//tạo bảng
+
+		}
+
 	</script>
 </body>
 
